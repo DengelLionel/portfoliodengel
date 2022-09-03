@@ -11,7 +11,7 @@ export default function Presentacionvideo(){
     return(
         <header id='inicio' className='h-[200px] sm:h-[150px] lg:h-[190px] xl:h-[200px] 2xl:h-[250px]'>
         
-            <img className='m-0 xl:hidden md:hidden sm:hidden lg:hidden 2xl:hidden' alt='imgfondo' src='/media/fondoPort.svg'/>
+            <img className='m-0 w-full xl:hidden md:hidden sm:hidden lg:hidden 2xl:hidden' alt='imgfondo' src='/media/fondoPort.svg'/>
             <img className='hidden  sm:block sm:h-[150px] sm:w-full xl:block xl:w-full xl:h-[200px] md:block md:h-[150px] lg:block lg:h-[190px] 2xl:block 2xl:h-[250px]' alt='imgfondo2' src='/media/fondoPort.svg'/>
          
                 <div className="w-full h-[140px] sm:w-full sm:h-[75px] xl:w-full xl:h-[195px]  lg:w-full lg:h-[142px] relative -top-40 xl:relative xl:-top-[250px] lg:relative lg:-top-[210px] 2xl:relative 2xl:-top-[260px]">
