@@ -2,15 +2,16 @@ import Triangulo from "./secciones/Triangulo";
 import {statecolorContacto} from "../../redux/slices/cambioAspectoPagina"
 import { useSelector } from "react-redux";
 export default function Contacto({colortexto}){
-    let subtitulo=`font-bold font-robotob text-center text-xl xl:text-2xl  relative -top-[25vh] sm:relative sm:-top-[18vh] xl:-top-[190px] lg:-top-[22vh] xl:-top-[29vh] 2xl:text-3xl 2xl:-top-[21vh] ${colortexto}`;
+    let subtitulo=`font-bold font-robotob text-center text-xl xl:text-2xl z-[50] relative top-[160px] sm:relative sm:top-[200px] xl:-top-[190px] lg:top-[150px] xl:top-[150px] 2xl:text-3xl 2xl:top-[140px] ${colortexto}`;
     const colorstyled=useSelector(statecolorContacto)
     const FondoYclase=`${colorstyled}  p-[20px] h-[250px] w-full  xl:h-[480px] font-robotor  rounded-tr-[50px] rounded-tl-[50px] xl:rounded-tr-[150px] xl:rounded-tl-[150px]  sm:flex sm:justify-center sm:items-center sm:h-[320px] xl:flex xl:justify-center xl:items-center  lg:h-[400px] 2xl:h-[490px]  `
     return(
         <>
-        <div className=" w-full flex justify-center items-center sm:relative sm:top-[7vh] lg:-top-[3vh]">
+         <h2  id="contacto" className={subtitulo}>CONTACT</h2>
+        <div className=" w-full h-[100px] mt-[120px] mb-[80px] flex justify-center items-center sm:relative sm:top-[7vh] lg:-top-[3vh]">
             <Triangulo/>
             </div>
-        <h2  id="contacto" className={subtitulo}>CONTACT</h2>
+       
          <footer className={FondoYclase}>
           
     

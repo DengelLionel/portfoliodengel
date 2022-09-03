@@ -9,7 +9,7 @@ export default function Portafolio({colortexto}){
     const [movilDevelopment,setMovilDevelopment]=useState(false)
     const [design,setDesign]=useState(false)
           
-    let claseTitulo=`font-bold font-robotob text-center text-xl xl:text-2xl mb-[30px] xl:relative xl:-top-[165px] 2xl:text-3xl 2xl:relative 2xl:-top-[18.5vh] ${colortexto}`;
+    let claseTitulo=`relative top-[80px] z-[50] font-bold font-robotob text-center text-xl xl:text-2xl mb-[30px] xl:relative xl:top-[80px] 2xl:text-3xl 2xl:relative 2xl:top-[80px] ${colortexto}`;
     
     const HandledWebDevelopment=()=>{
         setWebDevelopment(true)
@@ -56,10 +56,11 @@ export default function Portafolio({colortexto}){
         <> 
       
         <section  className=" h-[140vh] sm:h-[142vh] md:h-[160vh] lg:h-[125vh] xl:h-[220vh]  2xl:h-[130vh] z-[25]  ">
-            <div className=" w-full flex justify-center items-center">
-            <Triangulo>
-            <h2 id="portafolio" className={claseTitulo}>PROJECTS</h2>
-            </Triangulo>
+        <h2 id="portafolio" className={claseTitulo}>PROJECTS</h2>
+            <div className=" w-full h-[100px] flex justify-center items-center mb-[120px]">
+            <Triangulo/>
+            
+            
             </div>
             
             <section className=" lg:grid lg:grid-cols-[auto] lg:w-full lg:h-[80vh] xl:grid xl:grid-cols-[auto] xl:items-center xl:w-[100%] md:mt-[50px]">
