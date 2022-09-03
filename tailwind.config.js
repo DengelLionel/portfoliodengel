@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage:{
         cajaplomo:"linear-gradient(to left,black 50%,black 50%,transparent)",
-        degradadonegro:"linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 139, 1), rgba(0, 0, 0, 0))",
+        degradadonegro:"linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))",
         degradadoceleste:"linear-gradient(to right,#5658C9,#2787DE,#02ADEE)",
         degradadonegroazul:"linear-gradient(to left,#171C1A,#1228E8)",
         blancopalido:"#fafafa",
