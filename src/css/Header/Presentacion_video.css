@@ -1,0 +1,28 @@
+
+.destello{
+    border-radius: 50% ;
+    z-index: 30;
+    width: 500px;
+    height: 4px;
+    background-image: radial-gradient(#07B883 50%,#079268 60% ,transparent );
+}
+@media screen and (min-width: 360px) {
+  .destello{
+      border-radius: 50% ;
+      z-index: 50;
+      width: 200px;
+      height: 4px;
+      background-image: radial-gradient(#07B883 50%,#079268 60% ,transparent );
+  }
+ 
+}
+ @media screen and (min-width: 760px) {
+  .destello{
+    border-radius: 50% ;
+    z-index: 50;
+    width: 400px;
+    height: 4px;
+    background-image: radial-gradient(#07B883 50%,#079268 60% ,transparent );
+   
+}
+} 

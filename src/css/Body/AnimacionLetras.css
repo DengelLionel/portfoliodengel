@@ -1,0 +1,23 @@
+#bienvenido{
+   
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 23ch;
+    animation: typing 2s steps(12),blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+#subbienvenido{
+    position: relative;
+    left: 260px;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 21ch;
+    animation: typing 2s steps(12),blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from { width: 0}
+}
+@keyframes blink {
+    50% {border-color: transparent}
+}
