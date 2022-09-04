@@ -9,7 +9,7 @@ export default function Portafolio({colortexto}){
     const [movilDevelopment,setMovilDevelopment]=useState(false)
     const [design,setDesign]=useState(false)
           
-    let claseTitulo=`relative top-[75px] z-[50] font-bold font-robotob text-center text-xl xl:text-2xl mb-[30px] xl:relative xl:top-[80px] 2xl:text-3xl 2xl:relative 2xl:top-[80px] ${colortexto}`;
+    let claseTitulo=`relative top-[75px] z-[50] font-bold font-robotob text-center text-xl xl:text-2xl mb-[30px] xl:relative xl:top-[75px] 2xl:text-3xl 2xl:relative 2xl:top-[80px] ${colortexto}`;
     
     const HandledWebDevelopment=()=>{
         setWebDevelopment(true)
