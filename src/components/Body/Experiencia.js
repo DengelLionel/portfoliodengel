@@ -57,7 +57,7 @@ export default function Experiencia({colortexto}){
         </section>
         </div>
            
-        {modalEstado?(<Modal modalEstado={modalEstado} valorclose={closee} close={close}>
+        {modalEstado&&<Modal modalEstado={modalEstado} valorclose={closee} close={close}>
 
                     {experiencia.map(dato => {
                         if(dato.id===id){
@@ -95,7 +95,7 @@ export default function Experiencia({colortexto}){
                        
                     )}
             
-             </Modal>):("")}
+             </Modal>}
         
        
         </>

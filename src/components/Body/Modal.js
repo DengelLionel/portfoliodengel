@@ -1,21 +1,25 @@
 import {colorFondoState} from "../../redux/slices/ColorFondoModal";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
+import {ColorExteriorModal} from "../../redux/slices/ColorExteriorModals";
+import ReactDOM from "react-dom";
 export default function Modal({children,modalEstado,close}){
     const colorfondo=useSelector(colorFondoState);
     
  
-    let fondoFull=`${colorfondo} p-[30px] h-[400px] w-[300px] rounded-lg fixed z-[80] top-[20%] left-[10%] sm:left-[27%] sm:top-[15%] md:left-[29%] lg:left-[35%] lg:top-[21%] xl:w-[1000px] xl:h-[550px] xl:top-[5%] xl:left-[13%] xl:rounded-2xl  2xl:top-[25%] 2xl:left-[17%] traslate-x-full duration-1000`
+    let fondoFull=`${colorfondo} p-[30px] h-[400px] w-[300px] rounded-lg fixed z-[80]  xl:w-[1000px] xl:h-[550px]  xl:rounded-2xl  traslate-x-full duration-1000`
    
     console.log(colorfondo)
+    const colorExteriorMostrar=useSelector(ColorExteriorModal)
     let modal=`${modalEstado===true?fondoFull:""}`
     useEffect(()=>{
-    },[colorfondo])
-    return(
+    },[colorfondo,colorExteriorMostrar])
+    let fondo=` ${colorExteriorMostrar===true?"fixed top-0  bg-negrotransparente z-[80] w-full h-full flex justify-center items-center":"bg-transparent "}`
+    return  (
 
         <>
-        
-        <div className={modal}>
+          {colorExteriorMostrar&&ReactDOM.createPortal( <div className={fondo}>
+            <div className={modal}>
         <div className="" >
             <button onClick={close} className="w-[30px] h-[30px] bg-white  rounded-full absolute left-[285px] -top-[10px] flex flex-row justify-center items-center xl:absolute xl:left-[980px] xl:w-[50px] xl:h-[50px]">
             <svg  width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,6 +32,8 @@ export default function Modal({children,modalEstado,close}){
 
         </div>
         </div>
+          </div>,document.querySelector("#portal1"))}   
+        
        
         </>
     )
