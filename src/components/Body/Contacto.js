@@ -2,7 +2,7 @@ import Triangulo from "./secciones/Triangulo";
 import {statecolorContacto} from "../../redux/slices/cambioAspectoPagina"
 import { useSelector } from "react-redux";
 export default function Contacto({colortexto}){
-    let subtitulo=`font-bold font-robotob text-center text-xl xl:text-2xl z-[50] relative top-[160px] sm:relative sm:top-[160px] xl:top-[165px] lg:top-[160px] xl:top-[150px] 2xl:text-3xl 2xl:top-[165px] ${colortexto}`;
+    let subtitulo=`font-bold font-robotob text-center text-xl xl:text-2xl z-[50] relative top-[160px] sm:relative sm:top-[160px] lg:top-[160px] xl:top-[165px] 2xl:text-3xl 2xl:top-[165px] ${colortexto}`;
     const colorstyled=useSelector(statecolorContacto)
     const FondoYclase=`${colorstyled}  p-[20px] h-[250px] w-full  xl:h-[480px] font-robotor  rounded-tr-[50px] rounded-tl-[50px] xl:rounded-tr-[150px] xl:rounded-tl-[150px]  sm:flex sm:justify-center sm:items-center sm:h-[320px] xl:flex xl:justify-center xl:items-center  lg:h-[400px] 2xl:h-[490px]  `
     return(
