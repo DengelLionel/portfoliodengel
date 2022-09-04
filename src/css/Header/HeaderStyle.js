@@ -32,6 +32,6 @@ bottom:32vh;
 
 @media only screen and (min-width: 1536px){
     position:relative;
-    bottom:34.5vh;
+    bottom:28vh;
 }
 `;

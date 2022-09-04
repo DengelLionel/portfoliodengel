@@ -9,7 +9,7 @@ export default function Portafolio({colortexto}){
     const [movilDevelopment,setMovilDevelopment]=useState(false)
     const [design,setDesign]=useState(false)
           
-    let claseTitulo=`relative top-[75px] z-[50] font-bold font-robotob text-center text-xl xl:text-2xl mb-[30px] xl:relative xl:top-[75px] 2xl:text-3xl 2xl:relative 2xl:top-[80px] ${colortexto}`;
+    let claseTitulo=`relative top-[75px] z-[50] font-bold font-robotob text-center text-xl xl:text-2xl mb-[30px] xl:relative xl:top-[75px] 2xl:text-3xl 2xl:relative 2xl:top-[150px] ${colortexto}`;
     
     const HandledWebDevelopment=()=>{
         setWebDevelopment(true)
@@ -55,9 +55,9 @@ export default function Portafolio({colortexto}){
     return(
         <> 
       
-        <section  className=" h-[125vh] sm:h-[130vh] md:h-[135vh] lg:h-[155vh] xl:h-[200vh]  2xl:h-[220vh] z-[25]  ">
+        <section  className=" h-[125vh] sm:h-[130vh] md:h-[135vh] lg:h-[155vh] xl:h-[200vh]  2xl:h-[190vh] z-[25]  ">
         <h2 id="portafolio" className={claseTitulo}>PROJECTS</h2>
-            <div className=" w-full h-[100px] flex justify-center items-center mb-[120px]">
+            <div className=" w-full h-[100px] 2xl:mt-[100px] 2xl:mb-[150px] flex justify-center items-center mb-[120px]">
             <Triangulo/>
             
             

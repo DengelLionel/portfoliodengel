@@ -32,7 +32,7 @@ export default function Experiencia({colortexto}){
     let subtitulo=`font-bold font-robotob text-center text-xl xl:text-2xl mt-[30px] mb-[30px] relative top-[70px] z-[50] lg:relative lg:top-[70px] xl:relative xl:top-[75px] 2xl:text-3xl 2xl:top-[75px] ${colortexto}`;
     return(
         <>
-        <div className="h-[124vh] sm:h-[117vh] md:h-[90vh] lg:h-[80vh]  2xl:h-[120vh] ">
+        <div className="h-[124vh] sm:h-[117vh] md:h-[90vh] lg:h-[80vh]  2xl:h-[100vh] ">
         <h2 id="experiencia" className={subtitulo}>EXPERIENCES</h2>
         <div className=" w-full h-[100px] mb-[50px] flex justify-center items-center  sm:mb-[160px] md:mb-[180px] 2xl:mb-[260px] ">
             <Triangulo/>

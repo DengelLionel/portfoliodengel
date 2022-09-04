@@ -8,7 +8,7 @@ export default function Contacto({colortexto}){
     return(
         <>
          <h2  id="contacto" className={subtitulo}>CONTACT</h2>
-        <div className=" w-full h-[100px] mt-[120px] mb-[80px] flex justify-center items-center ">
+        <div className=" w-full h-[100px] mt-[120px] mb-[80px] flex justify-center items-center  2xl:mb-[130px]">
             <Triangulo/>
             </div>
        
