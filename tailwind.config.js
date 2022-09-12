@@ -40,7 +40,7 @@ module.exports = {
         "navcoloramarillo":"#edc70c",
         "sobremi":"#02e9de",
         "titulos":"#02e9de",
-        "blancotransparente":"rgba(255,255,255,.5)",
+        "blancotransparente":"rgba(0,0,0,.5)",
         "bordemorado":"#3d0693",
         "triangulos":"#5658C9",
         "azul":"#17034c",
