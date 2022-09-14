@@ -8,11 +8,9 @@ export default function ItemsHabilidades({valorItem,clickItem}){
   const [stateItem,setStateItem]=useState({id:null,state:valorItem})
     const [idHabilidad,setIdHabilidad]=useState([])
     const valorItemFinal=useSelector(stateGrayScale)
-    console.log("reduxitem",valorItemFinal)
     const dispatch=useDispatch()
    
-    console.log("Habilidad",idHabilidad)
-    console.log("Habilidad Objeto",habilidades)
+
     const stadoDelItem=(item1,item2)=>{
         setStateItem({id:item1,state:!item2})
         habilidades.map((skills)=>{
@@ -96,11 +94,11 @@ export default function ItemsHabilidades({valorItem,clickItem}){
         cambioColor()
     },[clase,valorItem,stateItem.id,dispatch])
 
-    console.log("valorItem",valorItemFinal)
-    console.log("stateItem",stateItem)
+ 
     
     return(
         <div className="grid grid-cols-[repeat(2,auto)]  gap-[20px] p-[40px] sm:grid-cols-[auto,auto,auto] md:grid md:grid-cols-[auto,auto,auto,auto] xl:grid xl:grid-cols-[repeat(4,auto)] xl:gap-[50px] lg:grid lg:grid-cols-[auto,auto,auto,auto,auto]">
+          
             {habilidades.map(habilidad=>{
                      
                         

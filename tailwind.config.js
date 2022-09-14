@@ -8,11 +8,11 @@ module.exports = {
       backgroundImage:{
         cajaplomo:"linear-gradient(to left,black 50%,black 50%,transparent)",
         degradadonegro:"linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))",
-        degradadoceleste:"linear-gradient(to right,#5658C9,#2787DE,#02ADEE)",
+        degradadoceleste:"linear-gradient(to right, #5658C9,#2787DE,#02ADEE)",
         degradadonegroazul:"linear-gradient(to left,#171C1A,#1228E8)",
         blancopalido:"#fafafa",
         degradadoazul:"linear-gradient(to right,#1D24C8,#241A62)",
-        degradadoceleste2:"linear-gradient(to right,#02ADEE,#1972F8)",
+        degradadoceleste2:"linear-gradient(to left,#02ADEE,#1972F8)",
         degradadorojo:"linear-gradient(90deg,transparent,rgb(242, 18, 55),transparent)",
         degradadoperfil:"linear-gradient(#132D8E,#F6A71E)",
         degradadoitemuno:"linear-gradient(to left,#dc8b08,#281901)",
@@ -36,7 +36,7 @@ module.exports = {
       colors:{
         "blancotexto":"#fafafa",
         "negrotransparente":"rgba(0,0,0,.8)",
-        "negro":"rgb(60,60,60)",
+        "negro":"#18181b",
         "navcoloramarillo":"#edc70c",
         "sobremi":"#02e9de",
         "titulos":"#02e9de",
@@ -44,6 +44,7 @@ module.exports = {
         "bordemorado":"#3d0693",
         "triangulos":"#5658C9",
         "azul":"#17034c",
+        "titulosmodonocturno":"#f7b034",
      
       },
       fontFamily:{

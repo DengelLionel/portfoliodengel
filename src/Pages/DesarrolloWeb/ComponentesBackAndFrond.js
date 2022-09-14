@@ -1,10 +1,10 @@
-import Backend from "./backend"
-import Frontend from "./frontend"
+import FullStack from "./fullstack"
+
 export default function ComponentesBackAndFrond({colorTitulo}){
     return(
         <>
-        <Backend colorTitulo={colorTitulo}/>
-        <Frontend colorTitulo={colorTitulo}/>
+        <FullStack colorTitulo={colorTitulo}/>
+        
         </>
         
     )

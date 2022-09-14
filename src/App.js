@@ -8,8 +8,6 @@ import DesarrolloMovil from "./Pages/DesarrolloMovil"
 import DiseñoGrafico from "./Pages/DiseñoGrafico"
 import { Provider } from 'react-redux';
 import store from "./redux/store";
-import Backend from "./Pages/DesarrolloWeb/backend";
-import Frontend from "./Pages/DesarrolloWeb/frontend";
 function App() {
  
   
@@ -26,8 +24,8 @@ function App() {
        
           <Route  path="/SobreMi" index element={<SobreMi/>}/>
           <Route  path="/desarrolloweb"  element={<DesarrolloWeb/>}>
-          <Route path='frontend' element={<Frontend/>}/>
-            <Route path='backend'element={<Backend/>}/> 
+
+    
           </Route>
           <Route  path="/desarrollomovil"  element={<DesarrolloMovil/>}/>
           <Route  path="/disenografico"  element={<DiseñoGrafico/>}/>

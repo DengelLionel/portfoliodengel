@@ -9,10 +9,10 @@ export default function Presentacionvideo(){
   },[])
    
     return(
-        <header id='inicio' className='h-[200px] sm:h-[150px] lg:h-[190px] xl:h-[200px] 2xl:h-[250px]'>
+        <header id='inicio' className='h-[200px] sm:h-[150px] lg:h-[190px] xl:h-[230px] 2xl:h-[250px]'>
             <figure>
             <img className='fill-current w-full h-[200px] xl:hidden md:hidden sm:hidden lg:hidden 2xl:hidden' alt='imgfondo' src='/media/fondo.png'/>
-            <img className='hidden  sm:block sm:h-[150px] sm:w-full xl:block xl:w-full xl:h-[200px] md:block md:h-[150px] lg:block lg:h-[190px] 2xl:block 2xl:h-[250px]' alt='imgfondo2' src='/media/fondo.png'/>
+            <img className='hidden  sm:block sm:h-[150px] sm:w-full xl:block xl:w-full xl:h-[230px] md:block md:h-[150px] lg:block lg:h-[190px] 2xl:block 2xl:h-[250px]' alt='imgfondo2' src='/media/fondo.png'/>
             </figure>
             
          

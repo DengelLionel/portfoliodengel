@@ -27,19 +27,19 @@ export default function Experiencia({colortexto}){
         dispatch(setColorExterior(false));
         return closee
     }
-    console.log(id)
+
  
-    let subtitulo=`font-bold font-robotob text-center text-xl xl:text-2xl mt-[30px] mb-[30px] relative top-[70px] z-[50] lg:relative lg:top-[70px] xl:relative xl:top-[75px] 2xl:text-3xl 2xl:top-[75px] ${colortexto}`;
+    let subtitulo=`font-bold font-robotob text-center text-[2.25rem] xl:text-[3.75rem] mt-[30px] mb-[30px] relative top-[82px] z-[50] lg:relative lg:top-[82px] xl:relative xl:top-[90px] 2xl:text-[3.75rem] 2xl:top-[90px] ${colortexto}`;
     return(
         <>
-        <div className="h-[124vh] sm:h-[117vh] md:h-[90vh] lg:h-[80vh]  2xl:h-[100vh] ">
+        <div className="h-[124vh] sm:h-[117vh] md:h-[90vh] lg:h-[80vh]  2xl:h-[100vh] xl:mb-[100px] ">
         <h2 id="experiencia" className={subtitulo}>EXPERIENCES</h2>
         <div className=" w-full h-[100px] mb-[50px] flex justify-center items-center  sm:mb-[160px] md:mb-[180px] 2xl:mb-[260px] ">
             <Triangulo/>
             </div>
         
          
-        <section className=" w-full sm:relative sm:-top-[18vh] xl:relative xl:-top-[18vh] grid grid-cols-[auto] gap-4 justify-center items-center xl:grid xl:grid-cols-[repeat(3,auto)] xl:gap-6 lg:grid lg:grid-cols-[auto,auto,auto] lg:mt-[10vh] md:grid md:grid-cols-[auto,auto]">
+        <section className=" w-full sm:relative  grid grid-cols-[auto] gap-4 justify-center items-center xl:grid xl:grid-cols-[repeat(3,auto)] xl:gap-6  lg:grid lg:grid-cols-[auto,auto,auto] lg:mt-[10vh] md:grid md:grid-cols-[auto,auto]">
             {experiencia.map(data=>{
                 return(
                     <CartaExperiencia 

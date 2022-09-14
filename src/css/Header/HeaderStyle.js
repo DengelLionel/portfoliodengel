@@ -25,7 +25,7 @@ height:10vh;
 }
 @media only screen and (min-width: 1280px){
 position:relative;
-bottom:32vh;
+bottom:28vh;
     
 }
 

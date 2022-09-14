@@ -9,7 +9,7 @@ export default function SeccionBienvenido(){
         useEffect(()=>{
 
         },[getColor])
-        console.log("EstadoAspecto",getColor)
+       
     return(
         <> 
             <section className={colorContenedor}>

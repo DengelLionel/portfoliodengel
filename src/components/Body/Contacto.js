@@ -2,22 +2,22 @@ import Triangulo from "./secciones/Triangulo";
 import {statecolorContacto} from "../../redux/slices/cambioAspectoPagina"
 import { useSelector } from "react-redux";
 export default function Contacto({colortexto}){
-    let subtitulo=`font-bold font-robotob text-center text-xl xl:text-2xl z-[50] relative top-[160px] sm:relative sm:top-[160px] lg:top-[160px] xl:top-[165px] 2xl:text-3xl 2xl:top-[165px] ${colortexto}`;
+    let subtitulo=`font-bold font-robotob text-center text-[2.25rem] xl:text-[3.75rem] z-[50] relative top-[175px] sm:relative sm:top-[175px] lg:top-[174px] xl:top-[180px] 2xl:text-[3.75rem] 2xl:top-[185px] ${colortexto}`;
     const colorstyled=useSelector(statecolorContacto)
-    const FondoYclase=`${colorstyled}  p-[20px] h-[200px] w-full  xl:h-[450px] font-robotor  rounded-tr-[50px] rounded-tl-[50px] xl:rounded-tr-[150px] xl:rounded-tl-[150px]  sm:flex sm:justify-center sm:items-center sm:h-[150px] md:h-[280px] xl:flex xl:justify-center xl:items-center  lg:h-[300px] 2xl:h-[350px]  `
+    const FondoYclase=`${colorstyled}  p-[20px] h-[200px] w-full  xl:h-[300px] xl:mt-[150px] font-robotor  rounded-tr-[50px] rounded-tl-[50px] xl:rounded-tr-[150px] xl:rounded-tl-[150px]  sm:flex sm:justify-center sm:items-center sm:h-[150px] md:h-[280px] xl:flex xl:justify-center xl:items-center  lg:h-[300px] 2xl:h-[350px]  `
     return(
         <>
          <h2  id="contacto" className={subtitulo}>CONTACT</h2>
-        <div className=" w-full h-[100px] mt-[120px] mb-[80px] flex justify-center items-center  2xl:mb-[130px]">
+        <div className=" w-full h-[100px] mt-[120px] mb-[80px] flex justify-center items-center  2xl:mb-[130px] ">
             <Triangulo/>
             </div>
        
          <footer className={FondoYclase}>
           
     
-         <div className="sm:grid sm:grid-cols-[auto] xl:grid xl:grid-cols-1 xl:h-[450px] 2xl:h-[350px] ">
+         <div className="sm:grid sm:grid-cols-[auto] xl:grid xl:grid-cols-1 xl:h-[300px] 2xl:h-[350px] ">
 
-        <img className=" w-[300px] h-[200px] hidden md:block md:h-[170px] md:relative md:top-[20px] xl:w-[700px] xl:h-[300px] xl:relative xl:top-[60px] 2xl:h-[250px] 2xl:relative 2xl:-left-[500px]" alt="img"  src="img/19362653 [Convertido].svg"/>
+        <img className=" w-[300px] h-[200px] hidden md:block md:h-[170px] md:relative md:top-[20px] xl:w-[400px] xl:h-[200px] xl:relative xl:top-[60px] xl:-left-[270px] 2xl:h-[250px] 2xl:relative 2xl:-left-[390px]" alt="img"  src="img/19362653 [Convertido].svg"/>
         
             <div className="w-full flex justify-center items-center relative top-[15vh] flet-[3vw] sm:relative xl:relative xl:-top-[50px]  sm:top-[60px] md:relative md:top-[20px] lg:relative lg:top-[5vh] 2xl:-top-[50px]">
                

@@ -10,7 +10,7 @@ export default function PortafolioHome(){
     const cambioTemas=useSelector(cambioTema);
     const colorbodynegro="w-full lg:z-[70] bg-negro cursor-default";
     const colorbodyblanco="w-full  bg-white cursor-default";
-    const colorblanco="text-white";
+    const colorblanco="text-titulosmodonocturno";
     const colorsecund="text-titulos";
     const colorTitulo=`${cambioTemas?colorsecund:colorblanco}`
     const cambiotema=`${cambioTemas?colorbodyblanco:colorbodynegro}`
