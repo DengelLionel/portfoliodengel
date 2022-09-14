@@ -14,7 +14,7 @@ module.exports = {
         degradadoazul:"linear-gradient(to right,#1D24C8,#241A62)",
         degradadoceleste2:"linear-gradient(to left,#02ADEE,#1972F8)",
         degradadorojo:"linear-gradient(90deg,transparent,rgb(242, 18, 55),transparent)",
-        degradadoperfil:"linear-gradient(#132D8E,#F6A71E)",
+        degradadoperfil:"linear-gradient(#e51111,#dae511)",
         degradadoitemuno:"linear-gradient(to left,#dc8b08,#281901)",
         degradadoitemdos:"linear-gradient(to left,#009552,#0f4142)",
         degradadoitemtres:"linear-gradient(to right,#2787DE,#098264,#d74d46,#d4e91a)",
