@@ -14,7 +14,7 @@ export default function Habilidades({colortexto}){
     const fondoHabilidadYclase=`${colorStyled}   p-[20px]  xl:h-[auto] xl:p-[40px] xl:mt-[130px] flex flex-col justify-center items-center  xl:flex xl:flex-row xl:justify-center xl:items-center rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px] xl:rounded-tl-[140px] xl:rounded-br-[140px] duration-1000`
     return(
         
-        <div className=" h-[170vh] sm:h-[135vh] md:h-[120vh] lg:h-[120vh] xl:h-[130vh]  2xl:h-[130vh]  ">
+        <div className=" h-[170vh] sm:h-[135vh] md:h-[120vh] lg:h-[120vh] xl:h-[150vh]  2xl:h-[130vh]  ">
              <h2 id="habilidad" className={subtitulo}>SKILLS</h2>
         <div className=" w-full h-[100px] mt-[70px] mb-[70px] flex justify-center items-center ">
            
