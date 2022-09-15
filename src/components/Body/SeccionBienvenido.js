@@ -30,7 +30,7 @@ export default function SeccionBienvenido(){
                </section>
                 <section className="w-full flex justify-center items-center">
                     <div className="hidden w-[160px] h-[160px] lg:w-[300px] lg:h-[300px] xl:w-[320px] xl:h-[320px] 2xl:w-[360px] 2xl:h-[360px] rounded-full bg-degradadoperfil sm:flex justify-center items-center">
-                    <img loading='lazy' alt="img" className=" w-[150px] h-[150px] lg:w-[290px] lg:h-[290px] xl:w-[300px] xl:h-[300px] 2xl:w-[330px] 2xl:h-[330px] rounded-full" src="img/perfil2.png" />
+                    <img loading='lazy' alt="img" className=" w-[150px] h-[150px] lg:w-[290px] lg:h-[290px] xl:w-[300px] xl:h-[300px] 2xl:w-[330px] 2xl:h-[330px] rounded-full" src="img/perfilbajado.jpg" />
                     </div>
                    
                 </section>

@@ -19,7 +19,7 @@ export default function Presentacionvideo(){
                 <div className="flex justify-center items-center">
                   <img loading='lazy' className="hidden lg:hidden xl:block rounded-full  w-20 h-20 items-center sm:block sm:relative sm:top-[70px] md:top-[55px] xl:w-[120px] xl:h-[120px]" src="img/logoden.png" alt="img"/>
                   <div className=" w-[90px] h-[90px] sm:hidden lg:w-[300px] lg:h-[300px] xl:w-[320px] xl:h-[320px] 2xl:w-[360px] 2xl:h-[360px] rounded-full bg-degradadoperfil flex justify-center items-center relative -top-[30px] sm:relative sm:-top-0">
-                    <img loading='lazy' alt='img' className=" w-[80px] h-[80px] lg:w-[290px] lg:h-[290px] xl:w-[300px] xl:h-[300px] 2xl:w-[330px] 2xl:h-[330px] rounded-full" src="img/perfil2.png" />
+                    <img loading='lazy' alt='img' className=" w-[80px] h-[80px] lg:w-[290px] lg:h-[290px] xl:w-[300px] xl:h-[300px] 2xl:w-[330px] 2xl:h-[330px] rounded-full" src="img/perfilbajado.jpg" />
                     </div>
                 </div>
                 <section className="relative -top-[20px] sm:-top-0 lg:top-[90px] xl:top-[60px]">
