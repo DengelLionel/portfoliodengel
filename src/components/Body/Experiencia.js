@@ -32,7 +32,7 @@ export default function Experiencia({colortexto}){
     let subtitulo=`font-bold font-robotob text-center text-[2.25rem] xl:text-[3.75rem] mt-[30px] mb-[30px] relative top-[82px] z-[50] lg:relative lg:top-[82px] xl:relative xl:top-[90px] 2xl:text-[3.75rem] 2xl:top-[90px] ${colortexto}`;
     return(
         <>
-        <div className="h-[145vh] sm:h-[160vh] md:h-[110vh] lg:h-[80vh]  2xl:h-[100vh] xl:mb-[100px] ">
+        <div className="h-auto sm:h-auto md:h-auto lg:h-[80vh]  2xl:h-auto xl:mb-[100px] ">
         <h2 id="experiencia" className={subtitulo}>EXPERIENCES</h2>
         <div className=" w-full h-[100px] mb-[50px] flex justify-center items-center  sm:mb-[70px] md:mb-[90px] 2xl:mb-[260px] ">
             <Triangulo/>
@@ -66,25 +66,38 @@ export default function Experiencia({colortexto}){
                         return dato.id===id&&
                            
                             <div>
-                            <h2 className="text-xl text-yellow-900 text-center font-robotob leading-relaxed tracking-wide xl:text-3xl xl:mb-[15px] 2xl:text-4xl">{dato.trabajoTitulo}</h2>
+                            <h2 className="text-xl text-yellow-500 text-center font-bold font-robotob leading-relaxed tracking-wide xl:text-3xl xl:mb-[15px] 2xl:text-4xl">{dato.trabajoTitulo}</h2>
                             <div className="grid grid-cols-2 gap-[3px]">
-                            <span className="font-robotom text-white tracking-wide xl:text-xl 2xl:text-2xl">Fecha de Inicio: </span>
-                             <span className="font-robotor text-blue-100  tracking-normal xl:text-xl 2xl:text-2xl ">{dato.trabajoFechaInicio}</span>
-                              <span className="font-robotom text-white tracking-wide xl:text-xl 2xl:text-2xl">Fecha Fin: </span>
-                              <span className="font-robotor text-blue-100  tracking-normal xl:text-xl 2xl:text-2xl">{dato.trabajoFechaFin}</span>
+                            <span className="font-robotom font-medium text-white tracking-wide xl:text-xl 2xl:text-2xl">Start date: </span>
+                             <span className="font-robotor font-normal text-blue-100  tracking-normal xl:text-xl 2xl:text-2xl ">{dato.trabajoFechaInicio}</span>
+                              <span className="font-robotom font-medium text-white tracking-wide xl:text-xl 2xl:text-2xl">End date: </span>
+                              <span className="font-robotor font-normal text-blue-100  tracking-normal xl:text-xl 2xl:text-2xl">{dato.trabajoFechaFin}</span>
                               
-                            <span className="font-robotom text-white tracking-wide xl:text-xl 2xl:text-2xl">Lugar: </span> <span className="font-robotor text-blue-100 tracking-normal xl:text-xl 2xl:text-2xl">{dato.lugar}</span> 
-                            <span className="font-robotom text-white leading-relaxed tracking-wide xl:text-xl 2xl:text-2xl">Empresa: </span> <span className="font-robotor text-blue-100  tracking-normal xl:text-xl 2xl:text-2xl">{dato.empresa}</span>
+                            <span className="font-robotom font-medium text-white tracking-wide xl:text-xl 2xl:text-2xl">Locale: </span> <span className="font-robotor font-normal text-blue-100 tracking-normal xl:text-xl 2xl:text-2xl">{dato.lugar}</span> 
+                            <span className="font-robotom font-medium text-white leading-relaxed tracking-wide xl:text-xl 2xl:text-2xl">Business: </span> <span className="font-robotor font-normal text-blue-100  tracking-normal xl:text-xl 2xl:text-2xl">{dato.empresa}</span>
                             </div>
 
                             <div className="xl:grid xl:grid-cols-2 xl:gap-4" >
-                            <div className="bg-purple-600 shadow-lg p-[7px] h-[80px] rounded-md overflow-y-scroll ml-[8px] mt-[8px] sm:overflow-hidden xl:rounded-xl xl:p-[15px]">
-                            <span className="text-center text-white font-robotom leading-relaxed tracking-wide xl:text-xl 2xl:text-2xl">Funciones Laborales </span>
-                                <p className="font-robotor text-blue-100 leading-relaxed tracking-normal xl:text-xl 2xl:text-2xl">{dato.funciones}</p>
+                            <div className="bg-purple-600 shadow-lg p-[7px] h-[80px] rounded-md overflow-y-scroll ml-[8px] mt-[8px] xl:overflow-hidden xl:h-auto xl:rounded-xl xl:p-[15px]">
+                            <span className="text-center text-white font-medium font-robotom leading-relaxed tracking-wide xl:text-xl 2xl:text-2xl">RESPONSIBILITIES </span>
+                                {dato.funciones?.map(funcion=>{
+                                    const claseFromFunctions=`${funcion.color} font-robotor text-blue-100 leading-relaxed tracking-normal xl:text-xl 2xl:text-2xl p-[5px] xl:mt-[10px] rounded-tl-lg rounded-tr-lg rounded-br-lg rounded-bl-lg `
+                                    return(
+
+                                        <p key={funcion.id} className={claseFromFunctions}>{funcion.function}</p>
+                                    )
+                                })}
+                               
                             </div>
-                            <div className="bg-yellow-600 shadow-lg p-[7px] h-[80px] rounded-md overflow-y-scroll ml-[8px] mt-[8px] sm:overflow-hidden xl:rounded-xl xl:p-[15px]">
-                            <span className="text-center text-white font-robotom leading-relaxed tracking-wide xl:text-xl 2xl:text-2xl">Logros</span>
-                                <p className="font-robotor text-blue-100 leading-relaxed tracking-normal xl:text-xl 2xl:text-2xl">{dato.logros}</p>
+                            <div className="bg-yellow-600 shadow-lg p-[7px] h-[80px] rounded-md overflow-y-scroll ml-[8px] mt-[8px] xl:h-auto xl:overflow-hidden xl:rounded-xl xl:p-[15px]">
+                            <span className="text-center text-white font-medium font-robotom leading-relaxed tracking-wide xl:text-xl 2xl:text-2xl">KEY ACCOMPLISHMENTS</span>
+                                {dato.logros?.map(logro=>{
+                                    const claseFromLogro=`${logro.color} font-robotor text-blue-100 leading-relaxed tracking-normal xl:text-xl 2xl:text-2xl p-[5px] xl:mt-[10px] rounded-tl-lg rounded-tr-lg rounded-br-lg rounded-bl-lg`
+                                    return(
+                                        <p key={logro.id} className={claseFromLogro}>{logro.logro}</p>
+                                    )
+                                })}
+                                
                             </div>
                             </div>
                            

@@ -7,8 +7,8 @@ export default function CartaDesarrollo({title,image,item1,item2,item3,item4,git
     return(
         <div className="w-[320px] h-[250px]  sm:w-[320px] sm:h-[250px] md:w-[320px] md:h-[250px] lg:w-[310px] lg:h-[300px] xl:w-[320px] xl:h-[350px] bg-black rounded-3xl 2xl:w-[400px] duration-1000 2xl:h-[350px] cursor-default">
             <img loading='lazy' className="w-full h-[250px] lg:h-[300px] rounded-3xl xl:h-[350px]" alt="img" src={`/img/${image}`}/>
-            <div className="bg-blancotransparente p-[12px] relative -top-[137px] rounded-br-3xl rounded-bl-3xl ">
-                <span className="text-azul font-bold font-robotob text-md">{title} </span>
+            <div className="bg-blancotransparente  xl:h-[167px] p-[12px] relative -top-[138px] xl:relative xl:-top-[167px] rounded-br-3xl rounded-bl-3xl ">
+                <span className="text-yellow-500 font-bold font-robotob  text-md xl:text-xl">{title} </span>
                 
                 <div className="mb-[10px] grid grid-cols-[auto,auto,auto,auto] gap-1">
                 <span className={casillero1}>{item1&&item1.title}</span>

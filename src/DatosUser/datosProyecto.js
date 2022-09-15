@@ -1,6 +1,6 @@
 export const datosProyectosBackendAndFrontend=[{
     id:0,
-    title:"Formulario con archivos pdf",
+    title:"FORMULARIO CON ARCHIVOS PDF",
     image:"encuestaformulario.jpg",
     item1:{title:"Laravel",colorfondo:"bg-red-700"},
     item2:{title:"PHP",colorfondo:"bg-purple-700"},
@@ -12,7 +12,7 @@ export const datosProyectosBackendAndFrontend=[{
 },
 {
     id:1,
-    title:"Crud",
+    title:"CRUD",
     image:"crudcursos.jpg",
     item1:{title:"JS",colorfondo:"bg-yellow-700"},
     item2:{title:"PHP",colorfondo:"bg-purple-700"},
@@ -25,7 +25,7 @@ export const datosProyectosBackendAndFrontend=[{
 {
     id:2,
     title:"COMENTARIOS",
-    image:"",
+    image:"comentarios.png",
     item1:{title:"S. COMPONETS",colorfondo:"bg-pink-700"},
     item2:{title:"REACT JS",colorfondo:"bg-green-700"},
     item3:{title:"PHP",colorfondo:"bg-purple-700"},
