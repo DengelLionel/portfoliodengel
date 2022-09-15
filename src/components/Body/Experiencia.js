@@ -32,14 +32,14 @@ export default function Experiencia({colortexto}){
     let subtitulo=`font-bold font-robotob text-center text-[2.25rem] xl:text-[3.75rem] mt-[30px] mb-[30px] relative top-[82px] z-[50] lg:relative lg:top-[82px] xl:relative xl:top-[90px] 2xl:text-[3.75rem] 2xl:top-[90px] ${colortexto}`;
     return(
         <>
-        <div className="h-[124vh] sm:h-[117vh] md:h-[90vh] lg:h-[80vh]  2xl:h-[100vh] xl:mb-[100px] ">
+        <div className="h-[145vh] sm:h-[160vh] md:h-[110vh] lg:h-[80vh]  2xl:h-[100vh] xl:mb-[100px] ">
         <h2 id="experiencia" className={subtitulo}>EXPERIENCES</h2>
-        <div className=" w-full h-[100px] mb-[50px] flex justify-center items-center  sm:mb-[160px] md:mb-[180px] 2xl:mb-[260px] ">
+        <div className=" w-full h-[100px] mb-[50px] flex justify-center items-center  sm:mb-[70px] md:mb-[90px] 2xl:mb-[260px] ">
             <Triangulo/>
             </div>
         
          
-        <section className=" w-full sm:relative  grid grid-cols-[auto] gap-4 justify-center items-center xl:grid xl:grid-cols-[repeat(3,auto)] xl:gap-6  lg:grid lg:grid-cols-[auto,auto,auto] lg:mt-[10vh] md:grid md:grid-cols-[auto,auto]">
+        <section className=" w-full   grid grid-cols-[auto] gap-4 justify-center items-center xl:grid xl:grid-cols-[repeat(3,auto)] xl:gap-6  lg:grid lg:grid-cols-[auto,auto,auto] lg:mt-[10vh] md:grid md:grid-cols-[auto,auto]">
             {experiencia.map(data=>{
                 return(
                     <CartaExperiencia 
@@ -63,8 +63,8 @@ export default function Experiencia({colortexto}){
                         if(dato.id===id){
                             dispatch(setColorFondoModal(dato.fondocarta))
                         }
-                        return dato.id===id?(
-                            <> 
+                        return dato.id===id&&
+                           
                             <div>
                             <h2 className="text-xl text-yellow-900 text-center font-robotob leading-relaxed tracking-wide xl:text-3xl xl:mb-[15px] 2xl:text-4xl">{dato.trabajoTitulo}</h2>
                             <div className="grid grid-cols-2 gap-[3px]">
@@ -89,8 +89,7 @@ export default function Experiencia({colortexto}){
                             </div>
                            
                             </div>
-                            </>
-                        ):("")
+                            
                     }
                        
                     )}

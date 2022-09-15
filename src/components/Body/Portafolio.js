@@ -55,7 +55,7 @@ export default function Portafolio({colortexto}){
     return(
         <> 
       
-        <section  className=" h-[125vh] sm:h-[130vh] md:h-[135vh] lg:h-[155vh] xl:h-[180vh]   2xl:h-[190vh] z-[25]  ">
+        <section  className=" h-[145vh] sm:h-[150vh] md:h-[155vh] lg:h-[155vh] xl:h-[180vh]   2xl:h-[145vh] z-[25]  ">
         <h2 id="portafolio" className={claseTitulo}>PROJECTS</h2>
             <div className=" w-full h-[100px]  2xl:mt-[100px] 2xl:mb-[150px] flex justify-center items-center mb-[120px]">
             <Triangulo/>

@@ -25,13 +25,13 @@ height:10vh;
 }
 @media only screen and (min-width: 1280px){
 position:relative;
-bottom:28vh;
+bottom:32vh;
     
 }
 
 
 @media only screen and (min-width: 1536px){
     position:relative;
-    bottom:28vh;
+    bottom:20vh;
 }
 `;
