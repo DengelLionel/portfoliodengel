@@ -11,7 +11,7 @@ export default function Presentacionvideo(){
     return(
         <header className='h-[200px] sm:h-[150px] lg:h-[190px] xl:h-[200px] xl:w-full 2xl:h-[200px]'>
         
-            <img loading='lazy' className='w-full h-[200px] xl:h-[200px] md:h-[150px] lg:h-[190px] 2xl:block 2xl:h-[200px]' src="https://res.cloudinary.com/dengeltec/image/upload/v1663277827/samples/den/fondo_klxj0f.png" />
+            <img loading='lazy' className='w-full  h-[200px] sm:hidden md:block xl:h-[200px] md:h-[150px] lg:h-[190px] 2xl:block 2xl:h-[200px]' src="https://res.cloudinary.com/dengeltec/image/upload/v1663277827/samples/den/fondo_klxj0f.png" />
 
                 <div className="w-full h-[140px] sm:w-full sm:h-[75px] xl:w-full xl:h-[195px]  lg:w-full lg:h-[142px] relative -top-40 xl:relative xl:-top-[250px] lg:relative lg:-top-[210px] 2xl:relative 2xl:-top-[260px]">
                 <div className="flex justify-center items-center">
@@ -24,13 +24,13 @@ export default function Presentacionvideo(){
                 </div>
                 <section className="relative -top-[20px] sm:-top-0 lg:top-[90px] xl:top-[60px]">
             <h3 
-            className="font-bold sm:hidden md:hidden lg:block xl:block text-center font-robotob tracking-wide text-white bg-degradadonegro w-full h-[30px] xl:text-xl 2xl:text-2xl"
+            className="font-bold sm:hidden md:hidden lg:block xl:block text-center font-robotob tracking-wide text-white bg-degradadonegro w-full h-[30px] lg:text-xl xl:text-2xl 2xl:text-2xl"
             >Dengel Lionel Rivera Cajincho</h3>
               <div className="sm:hidden md:hidden lg:block xl:block flex justify-center items-center">
                 <div className="destello"></div>
               </div>
               <div  className="flex justify-center items-center xl:flex xl:justify-center xl:items-center lg:flex lg:justify-center lg:items-center md:hidden sm:hidden ">
-            <h4  className="font-bold text-center font-robotob tracking-wide text-white bg-degradadonegro w-full h-[30px] xl:text-xl 2xl:text-2xl">Developer FullStack</h4>
+            <h4  className="font-bold text-center font-robotob tracking-wide text-yellow-500 bg-degradadonegro w-full h-[30px] lg:text-xl xl:text-2xl 2xl:text-2xl">Developer FullStack</h4>
             </div>
             </section>
             </div>
