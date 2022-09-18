@@ -17,6 +17,7 @@ position:relative;
 height:15vh;
 bottom:16vh;
 padding:8px;
+z-index:90;
 }
 @media only screen and (min-width: 768px){
 height:10vh;

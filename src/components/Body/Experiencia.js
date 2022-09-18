@@ -78,10 +78,10 @@ export default function Experiencia({colortexto}){
                             </div>
 
                             <div className="xl:grid xl:grid-cols-2 xl:gap-4" >
-                            <div className="bg-purple-600 shadow-lg p-[7px] h-[80px] rounded-md overflow-y-scroll ml-[8px] mt-[8px] xl:overflow-hidden xl:h-auto xl:rounded-xl xl:p-[15px]">
+                            <div className="bg-purple-600  shadow-lg p-[7px] h-[120px] rounded-md overflow-y-scroll ml-[8px] mt-[8px] xl:overflow-hidden xl:h-auto xl:rounded-xl xl:p-[15px]">
                             <span className="text-center text-white font-medium font-robotom leading-relaxed tracking-wide xl:text-xl 2xl:text-2xl">RESPONSIBILITIES </span>
                                 {dato.funciones?.map(funcion=>{
-                                    const claseFromFunctions=`${funcion.color} font-robotor text-blue-100 leading-relaxed tracking-normal xl:text-xl 2xl:text-2xl p-[5px] xl:mt-[10px] rounded-tl-lg rounded-tr-lg rounded-br-lg rounded-bl-lg `
+                                    const claseFromFunctions=`${funcion.color} p-[10px] mt-[10px] font-robotor text-blue-100 leading-relaxed tracking-normal xl:text-xl 2xl:text-2xl p-[5px] xl:mt-[10px] rounded-tl-lg rounded-tr-lg rounded-br-lg rounded-bl-lg `
                                     return(
 
                                         <p key={funcion.id} className={claseFromFunctions}>{funcion.function}</p>
@@ -89,10 +89,10 @@ export default function Experiencia({colortexto}){
                                 })}
                                
                             </div>
-                            <div className="bg-yellow-600 shadow-lg p-[7px] h-[80px] rounded-md overflow-y-scroll ml-[8px] mt-[8px] xl:h-auto xl:overflow-hidden xl:rounded-xl xl:p-[15px]">
+                            <div className="bg-yellow-600 shadow-lg p-[7px] h-[100px] rounded-md overflow-y-scroll ml-[8px] mt-[8px] xl:h-auto xl:overflow-hidden xl:rounded-xl xl:p-[15px]">
                             <span className="text-center text-white font-medium font-robotom leading-relaxed tracking-wide xl:text-xl 2xl:text-2xl">KEY ACCOMPLISHMENTS</span>
                                 {dato.logros?.map(logro=>{
-                                    const claseFromLogro=`${logro.color} font-robotor text-blue-100 leading-relaxed tracking-normal xl:text-xl 2xl:text-2xl p-[5px] xl:mt-[10px] rounded-tl-lg rounded-tr-lg rounded-br-lg rounded-bl-lg`
+                                    const claseFromLogro=`${logro.color} p-[10px] mt-[10px] font-robotor text-blue-100 leading-relaxed tracking-normal xl:text-xl 2xl:text-2xl p-[5px] xl:mt-[10px] rounded-tl-lg rounded-tr-lg rounded-br-lg rounded-bl-lg`
                                     return(
                                         <p key={logro.id} className={claseFromLogro}>{logro.logro}</p>
                                     )
