@@ -7,7 +7,7 @@ export const datosProyectosBackendAndFrontend=[{
     item3:{title:"MySql",colorfondo:"bg-blue-700"},
     item4:{title:"Css",colorfondo:"bg-sky-700"},
     github:"https://github.com/DengelLionel/formulario-con-archivos-pdf-e-imagenes.git",
-    view:""
+    view:"https://youtu.be/75VTQmeim6s"
     
 },
 {

@@ -7,7 +7,7 @@ export default function Modal({children,modalEstado,close}){
     const colorfondo=useSelector(colorFondoState);
     
  
-    let fondoFull=`${colorfondo} p-[30px] h-[400px] w-[300px] rounded-lg fixed z-[80]  xl:w-[1000px] xl:h-[550px]  xl:rounded-2xl  traslate-x-full duration-1000`
+    let fondoFull=`${colorfondo} p-[30px] h-auto w-[300px] rounded-lg fixed z-[80]  xl:w-[1000px] xl:h-[550px]  xl:rounded-2xl  traslate-x-full duration-1000`
    
     console.log(colorfondo)
     const colorExteriorMostrar=useSelector(ColorExteriorModal)
