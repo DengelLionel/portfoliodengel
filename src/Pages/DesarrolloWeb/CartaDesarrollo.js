@@ -25,7 +25,7 @@ export default function CartaDesarrollo({title,image,item1,item2,item3,item4,git
                 (<button  className="text-white font-robotom bg-blue-500 flex justify-center items-center w-[70px] rounded-md p-[4px] cursor-no-drop">
                     View
                 </button>):
-                (<a href="#"  target="_blank" className="text-white font-robotom bg-blue-500 flex justify-center items-center w-[70px] rounded-md p-[4px] ">
+                (<a href={view}  target="_blank" className="text-white font-robotom bg-blue-500 flex justify-center items-center w-[70px] rounded-md p-[4px] ">
                     View
                 </a>)}
                 
