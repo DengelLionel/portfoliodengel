@@ -226,32 +226,66 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemdiez")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemdiez")),
 
-                        dispatch(setColorPerfil("bg-degradadoverdeperfil9")),
+                        dispatch(setColorPerfil("bg-degradadoverdeperfil10")),
                         dispatch(setColorTextoSobromi("text-amarillo4")),
                         dispatch(setColorBoton("bg-black")),
                         dispatch(setColorBordeBoton("border-white")),
-                        dispatch(setColorHoverBordeBoton("hover:border-amarillo6")),
-                        dispatch(setColorBeforeBoton(" overflow-hidden relative before:content-[''] before:absolute before:top-0 before:left-[-100%] before:w-[100%] before:h-[100%] before:skew-x-[50deg] before:origin-top-left before:duration-700 hover:before:left-[100%] before:bg-degradadobotonflash5")),
+                        dispatch(setColorHoverBordeBoton("hover:border-celesteclaro")),
+                        dispatch(setColorBeforeBoton(" overflow-hidden relative before:content-[''] before:absolute before:top-0 before:left-[-100%] before:w-[100%] before:h-[100%] before:skew-x-[50deg] before:origin-top-left before:duration-700 hover:before:left-[100%] before:bg-degradadorojo")),
                         dispatch(setColorLineaHoverNavItems("xl:hover:bg-transparent xl:hover:border-t-transparent xl:hover:border-l-transparent xl:hover:border-r-transparent xl:hover:border-white text-white")),
                         dispatch(setColorParrafoBienvenida("text-white")),
-                        dispatch(setColorTriangulo("border-l-azul8")),
+                        dispatch(setColorTriangulo("border-l-celeste10")),
                         dispatch(setTituloColorNoche("text-white")),
                         dispatch(setTituloColorDia("text-black")),
-                        dispatch(setColorBotonCategoriaProyecto("bg-degradadoitemnueve border-4 border-transparent text-white")),
-                        dispatch(setColorBotonCategoriaProyectoActivo("bg-degradadoitemnueve border-4 border-white text-white")),
-                        dispatch(setColorBotonCategoriaProyectoHover("hover:bg-degradadohovercategoria9")),
-                        dispatch(setColorCartaExperiencia("bg-degradadoitemnueve")),
-                        dispatch(setColorBotonExperiencia("bg-black hover:border-amarillo6 hover:bg-degradadohocercategoria  border-2 border-white"))
+                        dispatch(setColorBotonCategoriaProyecto("bg-degradadoitemdiez border-4 border-transparent text-white")),
+                        dispatch(setColorBotonCategoriaProyectoActivo("bg-degradadoitemdiez border-4 border-white text-white")),
+                        dispatch(setColorBotonCategoriaProyectoHover("hover:bg-degradadohovercategoria10")),
+                        dispatch(setColorCartaExperiencia("bg-degradadoitemdiez")),
+                        dispatch(setColorBotonExperiencia("bg-black hover:border-celesteclaro hover:bg-degradadohocercategoria  border-2 border-white"))
             case 11:
             return dispatch(setColorAspecto("bg-degradadoitemonce")),
                         dispatch(setColorStyled("linear-gradient(to left,#240567,#64049c)")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemonce")),
-                        dispatch(setColorSeccionContacto("bg-degradadoitemonce"))
+                        dispatch(setColorSeccionContacto("bg-degradadoitemonce")),
+
+                        dispatch(setColorPerfil("bg-degradadoverdeperfil10")),
+                        dispatch(setColorTextoSobromi("text-amarillo4")),
+                        dispatch(setColorBoton("bg-morado1")),
+                        dispatch(setColorBordeBoton("border-white")),
+                        dispatch(setColorHoverBordeBoton("hover:border-celesteclaro")),
+                        dispatch(setColorBeforeBoton(" overflow-hidden relative before:content-[''] before:absolute before:top-0 before:left-[-100%] before:w-[100%] before:h-[100%] before:skew-x-[50deg] before:origin-top-left before:duration-700 hover:before:left-[100%] before:bg-degradadobotonflash10")),
+                        dispatch(setColorLineaHoverNavItems("xl:hover:bg-transparent xl:hover:border-t-transparent xl:hover:border-l-transparent xl:hover:border-r-transparent xl:hover:border-white text-white")),
+                        dispatch(setColorParrafoBienvenida("text-white")),
+                        dispatch(setColorTriangulo("border-l-morado2")),
+                        dispatch(setTituloColorNoche("text-white")),
+                        dispatch(setTituloColorDia("text-black")),
+                        dispatch(setColorBotonCategoriaProyecto("bg-degradadoitemonce border-4 border-transparent text-white")),
+                        dispatch(setColorBotonCategoriaProyectoActivo("bg-degradadoitemonce border-4 border-white text-white")),
+                        dispatch(setColorBotonCategoriaProyectoHover("hover:bg-degradadohovercategoria11")),
+                        dispatch(setColorCartaExperiencia("bg-degradadoitemonce")),
+                        dispatch(setColorBotonExperiencia("bg-transparent hover:border-celesteclaro hover:bg-degradadohocercategoria  border-2 border-white"))
             case 12:
             return dispatch(setColorAspecto("bg-degradadoitemdoce")),
-                    dispatch(setColorStyled("linear-gradient(to left,#0c8894,#051011)")),
+                    dispatch(setColorStyled("linear-gradient(to left,#46cdcf,#3d84a7)")),
                     dispatch(setColorSeccionHabilidad("bg-degradadoitemdoce")),
-                    dispatch(setColorSeccionContacto("bg-degradadoitemdoce"))
+                    dispatch(setColorSeccionContacto("bg-degradadoitemdoce")),
+
+                    dispatch(setColorPerfil("bg-degradadoverdeperfil12")),
+                        dispatch(setColorTextoSobromi("text-amarillo4")),
+                        dispatch(setColorBoton("bg-transparent")),
+                        dispatch(setColorBordeBoton("border-white")),
+                        dispatch(setColorHoverBordeBoton("hover:border-celesteclaro")),
+                        dispatch(setColorBeforeBoton(" overflow-hidden relative before:content-[''] before:absolute before:top-0 before:left-[-100%] before:w-[100%] before:h-[100%] before:skew-x-[50deg] before:origin-top-left before:duration-700 hover:before:left-[100%] before:bg-degradadobotonflash12")),
+                        dispatch(setColorLineaHoverNavItems("xl:hover:bg-transparent xl:hover:border-t-transparent xl:hover:border-l-transparent xl:hover:border-r-transparent xl:hover:border-white text-black")),
+                        dispatch(setColorParrafoBienvenida("text-white")),
+                        dispatch(setColorTriangulo("border-l-celeste12")),
+                        dispatch(setTituloColorNoche("text-white")),
+                        dispatch(setTituloColorDia("text-black")),
+                        dispatch(setColorBotonCategoriaProyecto("bg-degradadoitemdoce border-4 border-transparent text-white")),
+                        dispatch(setColorBotonCategoriaProyectoActivo("bg-degradadoitemdoce border-4 border-white text-white")),
+                        dispatch(setColorBotonCategoriaProyectoHover("hover:bg-degradadohovercategoria12")),
+                        dispatch(setColorCartaExperiencia("bg-degradadoitemdoce")),
+                        dispatch(setColorBotonExperiencia("bg-celeste13 hover:border-celesteclaro hover:bg-degradadohocercategoria  border-2 border-white"))
 
 
         }
