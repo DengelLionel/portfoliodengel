@@ -39,6 +39,7 @@ module.exports = {
         degradadoverdeperfil3:"linear-gradient(to right,#1F2EFF,#C2C6FF)",
         degradadoverdeperfil4:"linear-gradient(to right,#0B56FF,#5C8DFF)",
         degradadoverdeperfil5:"linear-gradient(to right,#f29f05,#f28705)",
+        degradadobotonactivo:"linear-gradient(to right,#f50c0c,#561717)",
       },
       colors:{
         "blancotexto":"#fafafa",
@@ -79,7 +80,9 @@ module.exports = {
         "amarillo5":"#f29f05",
         "naranjaclaro":"#f28705",
         "naranjaoscuro1":"#d33a03",
-        "naranjaoscuro2":"#a82f01"
+        "naranjaoscuro2":"#a82f01",
+        "amarillo6":"#FFFF00",
+        "rojo4":"#ee1416",
       },
       fontFamily:{
         ronsard:['Cairo', "sans-serif"],
