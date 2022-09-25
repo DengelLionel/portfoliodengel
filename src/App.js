@@ -14,7 +14,7 @@ function App() {
 
   return (
     
-    <div className='app' onContextMenu={(e)=>e.preventDefault()}>
+    <section className="app" onContextMenu={(e)=>e.preventDefault()}>
        
       <Provider store={store}>
       <BrowserRouter>
@@ -37,7 +37,7 @@ function App() {
       </BrowserRouter>
       </Provider>
 
-    </div>
+    </section>
     
   );
 }

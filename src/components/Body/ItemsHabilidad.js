@@ -24,7 +24,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
     const cambioColor=()=>{
         switch(stateItem.id){
             case 1:
-               return dispatch(setColorAspecto("bg-degradadoitemuno")),
+               return dispatch(setColorAspecto("bg-degradadoitemuno duration-1000 transition-all")),
                         dispatch(setColorStyled("linear-gradient(to left,#AD8214,#AD8410)")),
                             dispatch(setColorSeccionHabilidad("bg-degradadoitemuno")),
                             dispatch(setColorSeccionContacto("bg-degradadoitemuno")),

@@ -116,6 +116,9 @@ module.exports = {
       boxShadow:{
         cartaportafolio:"#C4C4C4 20px 30px",
       },
+      transitionDuration:{
+        'cambio':'--webkit-transition,background-color'
+      },
       
     },
   },
