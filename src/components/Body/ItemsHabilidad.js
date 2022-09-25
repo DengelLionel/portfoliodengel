@@ -126,7 +126,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                             dispatch(setColorLineaHoverNavItems("xl:hover:bg-transparent xl:hover:border-t-transparent xl:hover:border-l-transparent xl:hover:border-r-transparent xl:hover:border-white text-white")),
                             dispatch(setColorTriangulo("border-l-naranjaclaro")),
                             dispatch(setTituloColorNoche("text-white")),
-                            dispatch(setTituloColorDia("text-white")),
+                            dispatch(setTituloColorDia("text-black")),
                             dispatch(setColorBotonCategoriaProyecto("bg-degradadoitemcinco border-4 border-transparent text-white")),
                             dispatch(setColorBotonCategoriaProyectoActivo("bg-naranjaoscuro1 border-4 border-white text-white")),
                             dispatch(setColorBotonCategoriaProyectoHover("hover:bg-naranjaoscuro2")),
