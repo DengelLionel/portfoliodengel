@@ -60,7 +60,7 @@ export default function Portafolio({colortexto}){
     return(
         <> 
       
-        <section  className=" h-[155vh] sm:h-auto md:auto lg:h-[155vh] xl:h-[180vh]   2xl:h-[145vh] z-[25]  ">
+        <section  className=" h-[155vh] sm:h-auto md:auto lg:h-[155vh] xl:h-auto  2xl:h-[145vh] z-[25]  ">
         <h2 id="portafolio" className={claseTitulo}>PROJECTS</h2>
             <div className=" w-full h-[100px]  2xl:mt-[100px] 2xl:mb-[150px] flex justify-center items-center mb-[120px]">
             <Triangulo/>
@@ -75,7 +75,7 @@ export default function Portafolio({colortexto}){
                 <button onClick={HandleMovilDevelopment} className={ClaseBottom2}>Mobile Development</button>
               {/*   <button onClick={HandleDesign} className={ClaseBottom3}>Grafic Design</button> */}
                 </div>
-        <section className="w-full h-[500px] mt-[50px]   pt-[20px] pb-[20px] grid grid-cols-[auto] gap-4 justify-center items-center lg:grid lg:grid-cols-[auto] lg:gap-10   lg:h-[610px]  xl:w-full xl:overflow-hidden xl:h-[900px] xl:grid xl:grid-cols-[auto]  xl:gap-[60px]  relative -top-[15vh] sm:relative sm:-top-[10vh] 2xl:mt-[50px]">
+        <section className="w-full h-[500px] mt-[50px]   pt-[20px] pb-[20px] grid grid-cols-[auto] gap-4 justify-center items-center lg:grid lg:grid-cols-[auto] lg:gap-10   lg:h-[610px]  xl:w-full xl:overflow-hidden xl:h-auto xl:grid xl:grid-cols-[auto]  xl:gap-[60px]  relative -top-[15vh] sm:relative sm:-top-[10vh] 2xl:mt-[50px]">
        {/*  <CartaPortafolio pagina={"desarrolloweb"}   imagen={"/img/desarrolloweb.png"}/>
         <CartaPortafolio pagina={"desarrollomovil"}  imagen={"/img/desarrollomovil.png"}/>
         <CartaPortafolio pagina={"disenografico"}  imagen={"/img/diseñografico.png"}/> */}
