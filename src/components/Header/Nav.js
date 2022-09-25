@@ -70,10 +70,10 @@ import ButoonTema from "./ButtonTema"
            return CategoriaValor()
         }
     }
-    const itemNav1=`pb-[20px] text-white font-ronsard font-bold cursor-pointer xl:p-[15px] border-2  border-transparent ${getColorBodeItem} xl:before:shadow-xl  sm:p-[5px] sm:text-sm lg:p-[20px] 2xl:text-2xl leading-relaxed tracking-widest xl:text-xl`;
-    const itemNav2=`font-ronsard  font-bold pb-[20px] text-white cursor-pointer xl:p-[15px] border-2 border-transparent ${getColorBodeItem}  xl:before:shadow-xl  sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl  leading-relaxed tracking-widest sm:hidden`;
-    const itemNav3=`font-ronsard font-bold pb-[20px] text-white cursor-pointer xl:p-[15px] border-2 border-transparent ${getColorBodeItem} xl:hover:before:shadow-xl sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl  leading-relaxed tracking-widest xl:text-xl`;
-    const itemNav4=`font-ronsard font-bold pb-[20px] text-white cursor-pointer xl:p-[15px] border-2 border-transparent ${getColorBodeItem} xl:before:hover:shadow-xl sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl  leading-relaxed tracking-widest xl:text-xl`;
+    const itemNav1=`pb-[20px]  font-ronsard font-bold cursor-pointer xl:p-[15px] border-2  border-transparent ${getColorBodeItem} xl:before:shadow-xl  sm:p-[5px] sm:text-sm lg:p-[20px] 2xl:text-2xl leading-relaxed tracking-widest xl:text-xl`;
+    const itemNav2=`font-ronsard  font-bold pb-[20px] cursor-pointer xl:p-[15px] border-2 border-transparent ${getColorBodeItem}  xl:before:shadow-xl  sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl  leading-relaxed tracking-widest sm:hidden`;
+    const itemNav3=`font-ronsard font-bold pb-[20px]  cursor-pointer xl:p-[15px] border-2 border-transparent ${getColorBodeItem} xl:hover:before:shadow-xl sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl  leading-relaxed tracking-widest xl:text-xl`;
+    const itemNav4=`font-ronsard font-bold pb-[20px]  cursor-pointer xl:p-[15px] border-2 border-transparent ${getColorBodeItem} xl:before:hover:shadow-xl sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl  leading-relaxed tracking-widest xl:text-xl`;
     return(
      
         <NavBarStyle 

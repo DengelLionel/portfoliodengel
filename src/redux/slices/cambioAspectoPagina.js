@@ -10,7 +10,7 @@ const initialState={
     colorBordeBoton:"border-azul3",
     colorHoverBordeBoton:"hover:border-celesteclaro",
     colorBeforeBoton:"hover:bg-degradadoceleste overflow-hidden relative  before:content-[''] before:absolute before:top-0 before:left-[-100%] before:w-[100%] before:h-[100%] before:skew-x-[50deg] before:origin-top-left before:duration-700 hover:before:left-[100%] before:bg-degradadorojo",
-    colorLineaHoverNavItems:"xl:hover:bg-transparent xl:hover:border-t-transparent xl:hover:border-l-transparent xl:hover:border-r-transparent xl:hover:border-celesteclaro",
+    colorLineaHoverNavItems:"xl:hover:bg-transparent xl:hover:border-t-transparent xl:hover:border-l-transparent xl:hover:border-r-transparent xl:hover:border-celesteclaro text-white",
     colorTriangulo:"border-l-triangulos",
     colorTituloNoche:"text-titulosmodonocturno",
     colorTituloDia:"text-titulos",
@@ -18,7 +18,8 @@ const initialState={
     colorBotonCategoriaProyecto:"border-4 border-transparent bg-degradadoceleste text-white",
     colorBotonCategoriaProyectoHover:"hover:bg-yellow-700",
     colorCartaExperiencia:"bg-degradadoceleste ",
-    colorBotonExperiencia:"bg-degradadoceleste border-2 border-azul3 hover:border-celesteclaro"
+    colorBotonExperiencia:"bg-degradadoceleste border-2 border-azul3 hover:border-celesteclaro",
+    colorParrafoBienvenida:"text-white",
 
 }
 const cambioAspectoPagina=createSlice({
@@ -81,6 +82,9 @@ const cambioAspectoPagina=createSlice({
         },
         setColorBotonExperiencia(state,action){
             state.colorBotonExperiencia=action.payload;
+        },
+        setColorParrafoBienvenida(state,action){
+            state.colorParrafoBienvenida=action.payload;
         }
 
     }
@@ -104,5 +108,6 @@ export const stateColorBotonCategoriaProyecto=(state)=>state.cambioAspectoPagina
 export const stateColorBotonCategoriaProyectoHover=(state)=>state.cambioAspectoPagina.colorBotonCategoriaProyectoHover;
 export const stateColorCartaExperiencia=(state)=>state.cambioAspectoPagina.colorCartaExperiencia;
 export const stateColorBotonExperiencia=(state)=>state.cambioAspectoPagina.colorBotonExperiencia;
-export const {setColorAspecto,setColorStyled,setColorSeccionHabilidad,setColorSeccionContacto,setColorPerfil,setColorTextoSobromi,setColorBoton,setColorBordeBoton,setColorHoverBordeBoton,setColorBeforeBoton,setColorLineaHoverNavItems,setColorTriangulo,setTituloColorNoche,setTituloColorDia,setColorBotonCategoriaProyectoActivo,setColorBotonCategoriaProyecto,setColorBotonCategoriaProyectoHover,setColorCartaExperiencia,setColorBotonExperiencia}=cambioAspectoPagina.actions;
+export const stateColorParrafoBienvenida=(state)=>state.cambioAspectoPagina.colorParrafoBienvenida;
+export const {setColorAspecto,setColorStyled,setColorSeccionHabilidad,setColorSeccionContacto,setColorPerfil,setColorTextoSobromi,setColorBoton,setColorBordeBoton,setColorHoverBordeBoton,setColorBeforeBoton,setColorLineaHoverNavItems,setColorTriangulo,setTituloColorNoche,setTituloColorDia,setColorBotonCategoriaProyectoActivo,setColorBotonCategoriaProyecto,setColorBotonCategoriaProyectoHover,setColorCartaExperiencia,setColorBotonExperiencia,setColorParrafoBienvenida}=cambioAspectoPagina.actions;
 export default cambioAspectoPagina.reducer;
