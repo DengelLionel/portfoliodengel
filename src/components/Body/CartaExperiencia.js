@@ -1,17 +1,22 @@
 import { useEffect } from "react";
 import {setIdExperiencia} from "../../redux/slices/idExperiencia";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import {stateColorCartaExperiencia,stateColorBotonExperiencia} from "../../redux/slices/cambioAspectoPagina";
 export default function CartaExperiencia({trabajoTitulo,AbrirModal,nId,paginaExperiencia,paginaHithub}){
     const dispatch=useDispatch()
    
     useEffect(()=>{
 
     },[dispatch])
+    const getColorCarta=useSelector(stateColorCartaExperiencia)
+    const getColorBotonCarta=useSelector(stateColorBotonExperiencia)
+    const cartaClaseBoton=`font-medium w-[130px] ${getColorBotonCarta} shadow-xl text-white text-center p-[5px] rounded-md sm:w-[180px] sm:p-[8px] xl:text-xl xl:w-full xl:rounded-xl lg:text-lg 2xl:text-2xl 2xl:w-[250px] 2xl:p-[10px]`
+    const cartaClase=`w-[200px] p-[12px] lg:w-[300px] lg:h-[300px] ${getColorCarta}  rounded-xl xl:w-[300px] xl:h-[300px] xl:p-[15px] 2xl:w-[350px] 2xl:h-[350px]`
     return(
         <>
         
-        <div class="w-[200px] p-[12px] lg:w-[300px] lg:h-[300px]  bg-gray-400 rounded-xl xl:w-[300px] xl:h-[300px] xl:pl-[5px] 2xl:w-[350px] 2xl:h-[350px]">
-            <h3 class="font-medium font-robotob text-center ml-2  xl:text-xl lg:text-lg 2xl:text-2xl">{trabajoTitulo}</h3>
+        <article class={cartaClase}>
+            <h3 class="font-bold font-robotob text-center text-white ml-2  xl:text-xl lg:text-lg 2xl:text-2xl">{trabajoTitulo}</h3>
             <div className=" flex flex-row justify-center xl:h-[150px] items-center gap-2">
                 {paginaExperiencia===""?(<div className="bg-blue-600 w-[70px] h-[70px] flex flex-row justify-center items-center rounded-full hover:bg-blue-900 hover:shadow-sm xl:shadow-xl cursor-no-drop">
                 <img  alt="img" src="/img/net.svg"/>      
@@ -33,13 +38,13 @@ export default function CartaExperiencia({trabajoTitulo,AbrirModal,nId,paginaExp
                 
                
                 </div>
-                <div onClick={()=>{AbrirModal(); dispatch(setIdExperiencia(nId))}} className="flex  justify-center items-center mt-[20px] cursor-pointer">
-                <div className="font-medium bg-blue-600 w-[130px] hover:bg-blue-900 shadow-xl text-white text-center p-[5px] rounded-md sm:w-[180px] sm:p-[8px] xl:text-xl xl:rounded-xl lg:text-lg 2xl:text-2xl 2xl:w-[250px] 2xl:p-[10px]">
+                <button onClick={()=>{AbrirModal(); dispatch(setIdExperiencia(nId))}} className="flex  justify-center items-center mt-[20px] cursor-pointer w-full">
+                <div className={cartaClaseBoton}>
                     <span>More Information</span>
                 </div>
-                </div>
+                </button>
                 
-            </div>
+            </article>
            
             
         </>

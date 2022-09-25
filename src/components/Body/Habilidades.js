@@ -11,7 +11,7 @@ export default function Habilidades({colortexto}){
     const clickItem=()=>{
         dispatch(setGrayScale(!valorClickItem));
     }
-    const fondoHabilidadYclase=`${colorStyled}   p-[20px]  xl:h-[auto] xl:p-[40px] xl:mt-[130px] flex flex-col justify-center items-center  xl:flex xl:flex-row xl:justify-center xl:items-center rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px] xl:rounded-tl-[140px] xl:rounded-br-[140px] duration-1000`
+    const fondoHabilidadYclase=` delay-1000 transition-colors ${colorStyled}  p-[20px]  xl:h-[auto] xl:p-[40px] xl:mt-[130px] flex flex-col justify-center items-center  xl:flex xl:flex-row xl:justify-center xl:items-center rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px] xl:rounded-tl-[140px] xl:rounded-br-[140px] duration-1000`
     return(
         
         <div className=" h-auto mt-[100px] sm:h-auto sm:mt-[240px] md:h-auto lg:h-auto xl:h-[145vh] xl:mt-[100px] 2xl:h-auto  ">

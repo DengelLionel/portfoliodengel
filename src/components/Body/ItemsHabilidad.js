@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import { habilidades } from "./secciones/ItemsH";
 import {stateGrayScale} from "../../redux/slices/cambioColorPagina";
-import {setColorAspecto,setColorStyled,setColorSeccionHabilidad,setColorSeccionContacto} from "../../redux/slices/cambioAspectoPagina";
+import {setColorAspecto,setColorStyled,setColorSeccionHabilidad,setColorSeccionContacto,setColorPerfil,setColorTextoSobromi,setColorBoton,setColorBordeBoton,setColorHoverBordeBoton,setColorBeforeBoton,setColorLineaHoverNavItems,setColorTriangulo,setTituloColorNoche,setTituloColorDia,setColorBotonCategoriaProyectoActivo,setColorBotonCategoriaProyecto,setColorBotonCategoriaProyectoHover,setColorCartaExperiencia,setColorBotonExperiencia} from "../../redux/slices/cambioAspectoPagina";
 import { useDispatch,useSelector } from "react-redux";
 export default function ItemsHabilidades({valorItem,clickItem}){
    
@@ -25,9 +25,25 @@ export default function ItemsHabilidades({valorItem,clickItem}){
         switch(stateItem.id){
             case 1:
                return dispatch(setColorAspecto("bg-degradadoitemuno")),
-                        dispatch(setColorStyled("linear-gradient(to left,#dc8b08,#281901)")),
+                        dispatch(setColorStyled("linear-gradient(to left,#AD8214,#AD8410)")),
                             dispatch(setColorSeccionHabilidad("bg-degradadoitemuno")),
-                            dispatch(setColorSeccionContacto("bg-degradadoitemuno"))
+                            dispatch(setColorSeccionContacto("bg-degradadoitemuno")),
+                            dispatch(setColorPerfil("bg-white")),
+                            dispatch(setColorTextoSobromi("text-black")),
+                            dispatch(setColorBoton("bg-plomo1")),
+                            dispatch(setColorBordeBoton("border-amarilloclaro")),
+                            dispatch(setColorHoverBordeBoton("hover:border-white")),
+                            dispatch(setColorBeforeBoton("hover:bg-black overflow-hidden relative before:content-[''] before:absolute before:top-0 before:left-[-100%] before:w-[100%] before:h-[100%] before:skew-x-[50deg] before:origin-top-left before:duration-700 hover:before:left-[100%] before:bg-degradadobotonflash1")),
+                            dispatch(setColorLineaHoverNavItems("xl:hover:bg-transparent xl:hover:border-t-transparent xl:hover:border-l-transparent xl:hover:border-r-transparent xl:hover:border-white")),
+                            dispatch(setColorTriangulo("border-l-trianguloamarillo")),
+                            dispatch(setTituloColorNoche("text-white")),
+                            dispatch(setTituloColorDia("text-plomo2")),
+                            dispatch(setColorBotonCategoriaProyecto("bg-degradadoitemuno border-4 border-transparent text-white")),
+                            dispatch(setColorBotonCategoriaProyectoActivo("bg-amarillo2  border-4 border-white text-white")),
+                            dispatch(setColorBotonCategoriaProyectoHover("hover:bg-amarillo3")),
+                            dispatch(setColorCartaExperiencia("bg-amarillo3")),
+                            dispatch(setColorBotonExperiencia("bg-amarillo3 hover:border-white  border-2 border-amarilloclaro"))
+
             case 2:
                return dispatch(setColorAspecto("bg-degradadoitemdos")),
                         dispatch(setColorStyled("linear-gradient(to left,#009552,#0f4142)")),

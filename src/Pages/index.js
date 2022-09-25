@@ -5,13 +5,15 @@ import Contacto from "../components/Body/Contacto";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import {cambioTema} from "../redux/slices/cambioTema"
-
+import {stateColorTituloNoche,stateColorTituloDia} from "../redux/slices/cambioAspectoPagina"
 export default function PortafolioHome(){
     const cambioTemas=useSelector(cambioTema);
+    const getColorTituloNoche=useSelector(stateColorTituloNoche)
+    const getColorTituloDia=useSelector(stateColorTituloDia)
     const colorbodynegro="w-full lg:z-[70] bg-negro cursor-default";
     const colorbodyblanco="w-full  bg-white cursor-default";
-    const colorblanco="text-titulosmodonocturno";
-    const colorsecund="text-titulos";
+    const colorblanco=getColorTituloNoche;
+    const colorsecund=getColorTituloDia;
     const colorTitulo=`${cambioTemas?colorsecund:colorblanco}`
     const cambiotema=`${cambioTemas?colorbodyblanco:colorbodynegro}`
    
