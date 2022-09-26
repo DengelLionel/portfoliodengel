@@ -8,7 +8,7 @@ module.exports = {
       backgroundImage:{
         cajaplomo:"linear-gradient(to left,black 50%,black 50%,transparent)",
         degradadonegro:"linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))",
-        degradadoceleste:"linear-gradient(to right, #050533,#0e0f3c)",
+        
         degradadonegroazul:"linear-gradient(to left,#171C1A,#1228E8)",
         blancopalido:"#fafafa",
         degradadoazul:"linear-gradient(to left, #050533,#0e0f3c)",
@@ -57,6 +57,7 @@ module.exports = {
 
       },
       colors:{
+        "degradadoceleste":"#050533",
         "blancotexto":"#fafafa",
         "celesteclaro":"#3dd2d9",
         "negrotransparente":"rgba(0,0,0,.8)",

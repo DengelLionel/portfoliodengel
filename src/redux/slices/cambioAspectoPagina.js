@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState={
     color:"bg-degradadoceleste",
-    colorstyled:"linear-gradient(to right, #050533,#0e0f3c)",
+    colorstyled:"#050533",
     colorFondoHabilidad:"bg-degradadoazul",
     colorFondoContacto:"bg-degradadoceleste2",
     colorPerfil:"bg-degradadoperfil",
@@ -16,7 +16,7 @@ const initialState={
     colorTituloDia:"text-titulos",
     colorBotonCategoriaProyectoActivo:"bg-degradadoceleste border-4 border-celesteclaro text-yellow-600",
     colorBotonCategoriaProyecto:"border-4 border-transparent bg-degradadoceleste text-white",
-    colorBotonCategoriaProyectoHover:"hover:bg-yellow-700",
+    colorBotonCategoriaProyectoHover:"hover:bg-azul",
     colorCartaExperiencia:"bg-degradadoceleste ",
     colorBotonExperiencia:"bg-degradadoceleste border-2 border-azul3 hover:border-celesteclaro",
     colorParrafoBienvenida:"text-white",
