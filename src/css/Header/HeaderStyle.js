@@ -1,9 +1,10 @@
 import styled from "styled-components";
+
 export const HeaderStyle=styled.header`
 
 background:	${props=>(props.fondoheader)};
-border-bottom-left-radius:40px;
-border-bottom-right-radius:40px;
+border-bottom-left-radius:${props=>(props.valorNav===true?"0px":"40px")};
+border-bottom-right-radius:${props=>(props.valorNav===true?'0px':'40px')};
 position:${ props=>(props.scrollVertical<=40?"relative" :"fixed")};
 z-index:${props=>(props.scrollVertical<100?"70":"70")};
 height:${props=>(props.scrollVertical===0?"13vh" :"15vh")};

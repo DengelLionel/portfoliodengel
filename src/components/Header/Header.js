@@ -15,6 +15,7 @@ import Nav from "./Nav";
 const Encabezado=()=>{
     const dispatch=useDispatch();
     const openState=useSelector(valorCategory);
+    console.log("val",openState)
     const colorstyled=useSelector(stateColorStyled)
     const handleClick=()=>{
         dispatch(setValorCategoriaNav(!openState));
@@ -32,7 +33,7 @@ useEffect(()=>{
     window.addEventListener("scroll",posicionHeaderScroll)
     
 
-},[scrollYY])
+},[scrollYY,openState])
 
 
    
@@ -44,7 +45,7 @@ useEffect(()=>{
   
     return (
         
-        <HeaderStyle fondoheader={colorstyled} scrollVertical={scrollYY} >
+        <HeaderStyle valorNav={openState} fondoheader={colorstyled} scrollVertical={scrollYY} >
              <Link className="relative top-[20px] left-[20px] xl:hidden xl:relative xl:left-0 xl:top-0  xl:p-[10px] sm:hidden" to="#" type="button">
                     <ButoonTema acceso={acceso} handleButton={handleButton} />
                 </Link>
