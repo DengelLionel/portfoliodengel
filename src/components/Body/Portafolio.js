@@ -58,7 +58,7 @@ export default function Portafolio({colortexto}){
         <> 
       
         <section  className=" h-[155vh] sm:h-auto md:auto lg:h-[155vh] xl:h-auto  2xl:h-[145vh] z-[25]  ">
-        <h2 id="portafolio" className={`relative top-[85px] z-[50] font-bold font-robotob text-center text-[2.25rem] xl:text-[3.75rem] mb-[30px] xl:relative xl:top-[90px] 2xl:text-[3.75rem] 2xl:relative 2xl:top-[165px] ${colortexto}`}>PROJECTS</h2>
+        <h2 id="portafolio" className={`duration-1000 transition-all relative top-[85px] z-[50] font-bold font-robotob text-center text-[2.25rem] xl:text-[3.75rem] mb-[30px] xl:relative xl:top-[90px] 2xl:text-[3.75rem] 2xl:relative 2xl:top-[165px] ${colortexto}`}>PROJECTS</h2>
             <div className=" w-full h-[100px]  2xl:mt-[100px] 2xl:mb-[150px] flex justify-center items-center mb-[120px]">
             <Triangulo/>
             
@@ -72,7 +72,7 @@ export default function Portafolio({colortexto}){
                 <button onClick={HandleMovilDevelopment} className={`${getColorCategoriaProyectoHover&&getColorCategoriaProyectoHover} ${movilDevelopment===true?getColorCategoriaProyectoActivo:getColorCategoriaProyecto} font-medium text-md  p-2 rounded-bl-xl rounded-br-xl rounded-tl-xl rounded-tr-xl  font-robotom lg:text-lg xl:text-xl xl:rounded-bl-2xl xl:rounded-tr-2xl xl:rounded-br-2xl xl:rounded-tl-2xl 2xl:text-2xl 2xl:rounded-tl-3xl 2xl:rounded-br-3xl  2xl:rounded-tr-3xl 2xl:rounded-bl-3xl duration-1000 transition-all`}>Mobile Development</button>
            
                 </div>
-        <section className="w-full h-[500px] mt-[50px]   pt-[20px] pb-[20px] grid grid-cols-[auto] gap-4 justify-center items-center lg:grid lg:grid-cols-[auto] lg:gap-10   lg:h-[610px]  xl:w-full xl:overflow-hidden xl:h-auto xl:grid xl:grid-cols-[auto]  xl:gap-[60px]  relative -top-[15vh] sm:relative sm:-top-[10vh] 2xl:mt-[50px]">
+        <section className="duration-1000 transition-all w-full h-[500px] mt-[50px]   pt-[20px] pb-[20px] grid grid-cols-[auto] gap-4 justify-center items-center lg:grid lg:grid-cols-[auto] lg:gap-10   lg:h-[610px]  xl:w-full xl:overflow-hidden xl:h-auto xl:grid xl:grid-cols-[auto]  xl:gap-[60px]  relative -top-[15vh] sm:relative sm:-top-[10vh] 2xl:mt-[50px]">
  
             {Projects()}
             

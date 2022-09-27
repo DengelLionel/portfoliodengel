@@ -9,7 +9,9 @@ z-index:${props=>(props.scrollVertical<100?"70":"70")};
 height:${props=>(props.scrollVertical===0?"13vh" :"15vh")};
 width:100%;
 bottom:${props=>(props.scrollVertical===0?"23.5vh" :"87vh")};
-transition:position bottom 5s;
+box-shadow:1px 10px 10px 1px  rgba(255,255,255,.2);
+transition-property:all;
+transition-duration:1000ms;
 @media only screen and (min-width: 640px){
     border-bottom-left-radius:0px;
 border-bottom-right-radius:0px;
@@ -18,6 +20,7 @@ height:15vh;
 bottom:16vh;
 padding:8px;
 z-index:90;
+box-shadow:none;
 }
 @media only screen and (min-width: 768px){
 height:10vh;

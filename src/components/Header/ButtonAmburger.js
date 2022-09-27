@@ -4,6 +4,8 @@ border:none;
 position:relative;
 z-index:40;
 top:4vh;
+transition-duration:700ms;
+transition-property:all;
 left:280px;
 @media only screen and (min-width: 624px){
     display:none;

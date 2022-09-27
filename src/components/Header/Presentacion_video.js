@@ -9,7 +9,7 @@ export default function Presentacionvideo(){
   },[])
    
     return(
-        <header className='h-[200px] sm:h-[150px] lg:h-[190px] xl:h-[200px] xl:w-full 2xl:h-[200px]'>
+        <header id="inicio"  className='h-[200px] sm:h-[150px] lg:h-[190px] xl:h-[200px] xl:w-full 2xl:h-[200px]'>
         
             <img loading='lazy' className='w-full  h-[200px] sm:hidden md:block xl:h-[200px] md:h-[150px] lg:h-[190px] 2xl:block 2xl:h-[200px]' src="https://res.cloudinary.com/dengeltec/image/upload/v1663277827/samples/den/fondo_klxj0f.png" />
 

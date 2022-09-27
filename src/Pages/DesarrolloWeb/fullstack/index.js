@@ -7,7 +7,7 @@ export default function FullStack({colorTitulo}){
         <>
         
         
-        <section className="grid grid-cols-[auto] gap-4 lg:grid lg:grid-cols-[auto,auto,auto] lg:gap-4 lg:w-full lg:mt-[50px] xl:flex xl:flex-wrap md:grid md:grid-cols-[auto,auto] md:gap-4">
+        <section className="duration-1000 transition-all grid grid-cols-[auto] gap-4 lg:grid lg:grid-cols-[auto,auto,auto] lg:gap-4 lg:w-full lg:mt-[50px] xl:flex xl:flex-wrap md:grid md:grid-cols-[auto,auto] md:gap-4">
         {datosProyectosBackendAndFrontend?.map(e=>{
             return(
                 <CartaDesarrollo

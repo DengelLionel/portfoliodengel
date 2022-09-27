@@ -16,7 +16,7 @@ z-index:30;
 right:${props=>(props.openState)};
 width:100%;
 height:100vh;
-transition:right 0.4s linear;
+transition:right 0.5s linear;
 
 @media only screen and (min-width: 640px){
     flex-direction:row;
