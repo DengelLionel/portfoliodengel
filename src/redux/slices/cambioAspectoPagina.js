@@ -7,7 +7,7 @@ const initialState={
     colorPerfil:"bg-degradadoperfil",
     colorTextoSobremi:"text-sobremi",
     colorBoton:"bg-degradadoceleste ",
-    colorBordeBoton:"border-azul3",
+    colorBordeBoton:"border-celesteclaro md:border-azul3",
     colorHoverBordeBoton:"hover:border-celesteclaro ",
     colorBeforeBoton:"hover:bg-degradadoceleste overflow-hidden relative  before:content-[''] before:absolute before:top-0 before:left-[-100%] before:w-[100%] before:h-[100%] before:skew-x-[50deg] before:origin-top-left before:duration-700 hover:before:left-[100%] before:bg-degradadorojo",
     colorLineaHoverNavItems:"xl:hover:bg-transparent xl:hover:border-t-transparent xl:hover:border-l-transparent xl:hover:border-r-transparent xl:hover:border-celesteclaro text-white",
