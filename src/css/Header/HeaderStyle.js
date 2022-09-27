@@ -9,7 +9,10 @@ z-index:${props=>(props.scrollVertical<100?"70":"70")};
 height:${props=>(props.scrollVertical===0?"13vh" :"15vh")};
 width:100%;
 bottom:${props=>(props.scrollVertical===0?"23.5vh" :"87vh")};
+<<<<<<< HEAD
 box-shadow:1px 10px 10px 1px  rgba(255,255,255,.2);
+=======
+>>>>>>> 304cf64e80972e344fde32df2ee9a2bd5a8751e6
 transition-property:all;
 transition-duration:1000ms;
 @media only screen and (min-width: 640px){
