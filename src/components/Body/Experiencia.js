@@ -29,7 +29,7 @@ export default function Experiencia({colortexto}){
     }
 
  
-    let subtitulo=`font-bold font-robotob text-center text-[2.25rem] xl:text-[3.75rem] mt-[30px] mb-[30px] relative top-[82px] z-[50] lg:relative lg:top-[82px] xl:relative xl:top-[90px] 2xl:text-[3.75rem] 2xl:top-[90px] ${colortexto}`;
+    let subtitulo=`duration-1000 transition-all font-bold font-robotob text-center text-[2.25rem] xl:text-[3.75rem] mt-[30px] mb-[30px] relative top-[82px] z-[50] lg:relative lg:top-[82px] xl:relative xl:top-[90px] 2xl:text-[3.75rem] 2xl:top-[90px] ${colortexto}`;
     return(
         <>
         <div className="h-auto sm:h-auto md:h-auto lg:h-[80vh]  2xl:h-auto xl:mb-[100px] ">

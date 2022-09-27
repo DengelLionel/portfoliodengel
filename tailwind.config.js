@@ -20,18 +20,16 @@ module.exports = {
         degradadobotonflash10:"linear-gradient(90deg,transparent,#6d01d7,transparent)",
         degradadobotonflash12:"linear-gradient(90deg,transparent,#47466d,transparent)",
         degradadoperfil:"linear-gradient(#41e8d6,#3dd2d9)",
-        degradadoitemuno:"linear-gradient(to left,#AD8214,#AD8410)",
-        degradadoitemdos:"linear-gradient(to left,#03545e,#008072)",
-        degradadoitemtres:"linear-gradient(to left,#0B56FF,#1627FF)",
-        degradadoitemcuatro:"linear-gradient(to left,#2787DE,#095082)",
-        degradadoitemcinco:"linear-gradient(to right,#f25c05,#f97000)",
-        degradadoitemseis:"linear-gradient(to left,#f31410,#3a10f3)",
-        degradadoitemsiete:"linear-gradient(to left,#f50c0c,#561717)",
-        degradadoitemocho:"linear-gradient(to left,#ead41c,#e8c811)",
-        degradadoitemnueve:"linear-gradient(to left,#f66207,#250be8,#250be8,#250be8)",
-        degradadoitemdiez:"linear-gradient(to left,#06b1e5,#023949)",
-        degradadoitemonce:"linear-gradient(to left,#240567,#64049c)",
-        degradadoitemdoce:"linear-gradient(to left,#46cdcf,#3d84a7)",
+
+        
+       
+        
+       
+        
+       
+       
+       
+        
         degradadodesarrolloweb:"linear-gradient(to left,#00a775,#011710)",
         degradadodesarrollowebxl:"linear-gradient(#00a775,#0352a1)",
         degradadoheaderdesarrolloweb:"linear-gradient(#070245,#021445)",
@@ -45,11 +43,10 @@ module.exports = {
         degradadoverdeperfil7:"linear-gradient(to right,#EDD21F,#F78300)",
         degradadobotonactivo:"linear-gradient(to right,#f50c0c,#561717)",
         degradadohovercategoria:"linear-gradient(to left,#AB0909,#960803)",
-        degradadohovercategoria8:"linear-gradient(to left,#E9A107,#EBBB0D)",
-        degradadohovercategoria9:"linear-gradient(to left,#1E09BA,#0C044E)",
-        degradadohovercategoria10:"linear-gradient(to left,#023949,#023949)",
-        degradadohovercategoria11:"linear-gradient(to left,#4000b3,#4000b3)",
-        degradadohovercategoria12:"linear-gradient(to left,#47466d,#3d84a7)",
+       
+        
+        
+        
         degradadoverdeperfil9:"linear-gradient(to left,#E9A107,#EBBB0D)",
         degradadoverdeperfil10:"linear-gradient(to left,#2f6086,#EBBB0D)",
         degradadoverdeperfil12:"linear-gradient(to left,#47466d,#abedd8)",
@@ -58,6 +55,22 @@ module.exports = {
       },
       colors:{
         "degradadoceleste":"#050533",
+        "degradadoitemuno":"#F36536",
+        "degradadoitemdos":"#008072",
+        "degradadoitemtres":"#1627FF",
+        "degradadoitemcuatro":"#0A95FF",
+        "degradadoitemcinco":"#f25c05",
+        "degradadoitemseis":"#3a10f3",
+        "degradadoitemsiete":"#f50c0c",
+        "degradadoitemocho":"#ead41c",
+        "degradadoitemnueve":"#250be8",
+        "degradadoitemdiez":"#0AA0C2",
+        "degradadoitemonce":"#240567",
+        "degradadoitemdoce":"#3d84a7",
+        "degradadohovercategoria8":"#E9A107",
+        "degradadohovercategoria10":"#16CAF3",
+        "degradadohovercategoria11":"#4000b3",
+        "degradadohovercategoria12":"#47466d",
         "blancotexto":"#fafafa",
         "celesteclaro":"#3dd2d9",
         "negrotransparente":"rgba(0,0,0,.8)",
@@ -69,7 +82,7 @@ module.exports = {
         "bordemorado":"#3d0693",
         "triangulos":"#0e0f3c",
         "trianguloamarillo":"#AD8214",
-        "azul":"#0020B2",
+        "azul":"#060969",
         "titulosmodonocturno":"#f7b034",
         "azul3":"#26256b",
         "plomo1":"#07070A",
@@ -85,16 +98,16 @@ module.exports = {
         "verdeclaro3":"#449342",
         "verdeclaro4":"#008072",
         "azulclaro1":"#C2C6FF",
-        "azul5":"#1627FF",
+        "azul5":"#0068B8",
         "azul6":"#4754FF",
         "azuloscuro":"#000A8F",
         "celesteclaro2":"#3B99A5",
-        "celeste3":"#0A54FF",
+        "celeste3":"#0A95FF",
         "celeste4":"#85A9FF",
-        "celesteoscuro":"#002B8F",
+        "celesteoscuro":"#00457A",
         "amarillo4":"#FFFF00",
         "amarillo5":"#f29f05",
-        "naranjaclaro":"#f28705",
+        "naranjaclaro":"#f25c05",
         "naranjaoscuro1":"#d33a03",
         "naranjaoscuro2":"#a82f01",
         "amarillo6":"#FFFF00",
@@ -107,6 +120,7 @@ module.exports = {
         "morado2":"#6d01d7",
         "celeste12":"#46cdcf",
         "celeste13":"#3d84a7",
+        "categoria9":"#3325CB",
       },
       fontFamily:{
         ronsard:['Cairo', "sans-serif"],

@@ -9,7 +9,8 @@ z-index:${props=>(props.scrollVertical<100?"70":"70")};
 height:${props=>(props.scrollVertical===0?"13vh" :"15vh")};
 width:100%;
 bottom:${props=>(props.scrollVertical===0?"23.5vh" :"87vh")};
-transition:position bottom 5s;
+transition-property:all;
+transition-duration:1000ms;
 @media only screen and (min-width: 640px){
     border-bottom-left-radius:0px;
 border-bottom-right-radius:0px;

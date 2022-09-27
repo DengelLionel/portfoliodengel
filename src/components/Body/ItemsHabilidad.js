@@ -25,7 +25,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
         switch(stateItem.id){
             case 1:
                return dispatch(setColorAspecto("bg-degradadoitemuno")),
-                        dispatch(setColorStyled("linear-gradient(to left,#AD8214,#AD8410) ")),
+                        dispatch(setColorStyled("#F36536")),
                             dispatch(setColorSeccionHabilidad("bg-degradadoitemuno")),
                             dispatch(setColorSeccionContacto("bg-degradadoitemuno")),
                             dispatch(setColorPerfil("bg-white")),
@@ -36,18 +36,18 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                             dispatch(setColorHoverBordeBoton("hover:border-white")),
                             dispatch(setColorBeforeBoton("hover:bg-black overflow-hidden relative before:content-[''] before:absolute before:top-0 before:left-[-100%] before:w-[100%] before:h-[100%] before:skew-x-[50deg] before:origin-top-left before:duration-700 hover:before:left-[100%] before:bg-degradadobotonflash1")),
                             dispatch(setColorLineaHoverNavItems("xl:hover:bg-transparent xl:hover:border-t-transparent xl:hover:border-l-transparent xl:hover:border-r-transparent xl:hover:border-white text-white")),
-                            dispatch(setColorTriangulo("border-l-trianguloamarillo")),
+                            dispatch(setColorTriangulo("border-l-degradadoitemuno")),
                             dispatch(setTituloColorNoche("text-white")),
                             dispatch(setTituloColorDia("text-plomo2")),
                             dispatch(setColorBotonCategoriaProyecto("bg-degradadoitemuno border-4 border-transparent text-white")),
-                            dispatch(setColorBotonCategoriaProyectoActivo("bg-amarillo2  border-4 border-white text-white")),
+                            dispatch(setColorBotonCategoriaProyectoActivo("bg-degradadoitemuno  border-4 border-white text-white")),
                             dispatch(setColorBotonCategoriaProyectoHover("hover:bg-amarillo3")),
-                            dispatch(setColorCartaExperiencia("bg-amarillo3")),
-                            dispatch(setColorBotonExperiencia("bg-amarillo3 hover:border-white  border-2 border-amarilloclaro"))
+                            dispatch(setColorCartaExperiencia("bg-degradadoitemuno")),
+                            dispatch(setColorBotonExperiencia("bg-degradadoitemuno hover:border-white  border-2 border-amarilloclaro"))
 
             case 2:
                return dispatch(setColorAspecto("bg-degradadoitemdos")),
-                        dispatch(setColorStyled("linear-gradient(to left,#03545e,#008072)")),
+                        dispatch(setColorStyled("#008072")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemdos")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemdos")),
                         dispatch(setColorParrafoBienvenida("text-white")),
@@ -69,7 +69,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                             dispatch(setColorBotonExperiencia("bg-degradadoitemdos hover:border-white  border-2 border-verdeclaro2"))
             case 3:
             return dispatch(setColorAspecto("bg-degradadoitemtres")),
-                        dispatch(setColorStyled("linear-gradient(to left,#0B56FF,#1627FF)")),
+                        dispatch(setColorStyled("#1627FF")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemtres")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemtres")),
                         dispatch(setColorParrafoBienvenida("text-white")),
@@ -90,7 +90,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                             dispatch(setColorBotonExperiencia("bg-degradadoitemtres hover:border-white  border-2 border-azulclaro1"))
             case 4:
             return dispatch(setColorAspecto("bg-degradadoitemcuatro")),
-                        dispatch(setColorStyled("linear-gradient(to left,#2787DE,#095082)")),
+                        dispatch(setColorStyled("#0A95FF")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemcuatro")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemcuatro")),
 
@@ -112,7 +112,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                             dispatch(setColorBotonExperiencia("bg-degradadoitemcuatro hover:border-white  border-2 border-celeste4"))
             case 5:
             return dispatch(setColorAspecto("bg-degradadoitemcinco")),
-                        dispatch(setColorStyled("linear-gradient(to right,#f25c05,#f97000)")),
+                        dispatch(setColorStyled("#f25c05")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemcinco")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemcinco")),
 
@@ -121,7 +121,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                             dispatch(setColorTextoSobromi("text-amarillo4")),
                             dispatch(setColorBoton("bg-transparent")),
                             dispatch(setColorBordeBoton("border-white")),
-                            dispatch(setColorHoverBordeBoton("hover:border-naranjaoscuro1")),
+                            dispatch(setColorHoverBordeBoton("hover:border-amarillo4")),
                             dispatch(setColorBeforeBoton(" overflow-hidden relative before:content-[''] before:absolute before:top-0 before:left-[-100%] before:w-[100%] before:h-[100%] before:skew-x-[50deg] before:origin-top-left before:duration-700 hover:before:left-[100%] before:bg-degradadobotonflash5")),
                             dispatch(setColorLineaHoverNavItems("xl:hover:bg-transparent xl:hover:border-t-transparent xl:hover:border-l-transparent xl:hover:border-r-transparent xl:hover:border-white text-white")),
                             dispatch(setColorTriangulo("border-l-naranjaclaro")),
@@ -134,7 +134,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                             dispatch(setColorBotonExperiencia("bg-degradadoitemcinco hover:border-white  border-2 border-naranjaclaro"))
             case 6:
             return dispatch(setColorAspecto("bg-degradadoitemseis")),
-                        dispatch(setColorStyled("linear-gradient(to left,#f31410,#3a10f3)")),
+                        dispatch(setColorStyled("#3a10f3")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemseis")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemseis")),
 
@@ -150,13 +150,13 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                             dispatch(setTituloColorNoche("text-white")),
                             dispatch(setTituloColorDia("text-white")),
                             dispatch(setColorBotonCategoriaProyecto("bg-degradadoitemseis border-4 border-transparent text-white")),
-                            dispatch(setColorBotonCategoriaProyectoActivo("bg-degradadobotonactivo border-4 border-white text-white")),
+                            dispatch(setColorBotonCategoriaProyectoActivo("bg-rojo4 border-4 border-white text-white")),
                             dispatch(setColorBotonCategoriaProyectoHover("hover:bg-rojo4")),
                             dispatch(setColorCartaExperiencia("bg-degradadoitemseis")),
                             dispatch(setColorBotonExperiencia("bg-degradadoitemseis hover:border-white  border-2 border-naranjaclaro"))
             case 7:
             return dispatch(setColorAspecto("bg-degradadoitemsiete")),
-                        dispatch(setColorStyled("linear-gradient(to left,#f50c0c,#561717)")),
+                        dispatch(setColorStyled("#f50c0c")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemsiete")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemsiete")),
 
@@ -172,13 +172,13 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                             dispatch(setTituloColorNoche("text-white")),
                             dispatch(setTituloColorDia("text-white")),
                             dispatch(setColorBotonCategoriaProyecto("bg-degradadoitemsiete border-4 border-transparent text-white")),
-                            dispatch(setColorBotonCategoriaProyectoActivo("bg-degradadobotonactivo border-4 border-rojoclaro text-white")),
-                            dispatch(setColorBotonCategoriaProyectoHover("hover:bg-degradadohovercategoria")),
+                            dispatch(setColorBotonCategoriaProyectoActivo("bg-degradadoitemsiete border-4 border-rojoclaro text-white")),
+                            dispatch(setColorBotonCategoriaProyectoHover("hover:bg-rojo4")),
                             dispatch(setColorCartaExperiencia("bg-degradadoitemsiete")),
                             dispatch(setColorBotonExperiencia("bg-degradadoitemsiete hover:border-rojoclaro hover:bg-degradadohocercategoria  border-2 border-naranjaclaro"))
             case 8:
             return dispatch(setColorAspecto("bg-degradadoitemocho")),
-                        dispatch(setColorStyled("linear-gradient(to left,#ead41c,#e8c811)")),
+                        dispatch(setColorStyled("#ead41c")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemocho")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemocho")),
 
@@ -200,7 +200,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                             dispatch(setColorBotonExperiencia("bg-black hover:border-amarillo6 hover:bg-degradadohocercategoria  border-2 border-white"))
             case 9:
             return dispatch(setColorAspecto("bg-degradadoitemnueve")),
-                        dispatch(setColorStyled("linear-gradient(to left,#f66207,#250be8,#250be8,#250be8)")),
+                        dispatch(setColorStyled("#250be8")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemnueve")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemnueve")),
 
@@ -217,12 +217,12 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                         dispatch(setTituloColorDia("text-black")),
                         dispatch(setColorBotonCategoriaProyecto("bg-degradadoitemnueve border-4 border-transparent text-white")),
                         dispatch(setColorBotonCategoriaProyectoActivo("bg-degradadoitemnueve border-4 border-white text-white")),
-                        dispatch(setColorBotonCategoriaProyectoHover("hover:bg-degradadohovercategoria9")),
+                        dispatch(setColorBotonCategoriaProyectoHover("hover:bg-categoria9")),
                         dispatch(setColorCartaExperiencia("bg-degradadoitemnueve")),
                         dispatch(setColorBotonExperiencia("bg-black hover:border-amarillo6 hover:bg-degradadohocercategoria  border-2 border-white"))
             case 10:
             return dispatch(setColorAspecto("bg-degradadoitemdiez")),
-                        dispatch(setColorStyled("linear-gradient(to left,#06b1e5,#023949)")),
+                        dispatch(setColorStyled("#0AA0C2")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemdiez")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemdiez")),
 
@@ -244,7 +244,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                         dispatch(setColorBotonExperiencia("bg-black hover:border-celesteclaro hover:bg-degradadohocercategoria  border-2 border-white"))
             case 11:
             return dispatch(setColorAspecto("bg-degradadoitemonce")),
-                        dispatch(setColorStyled("linear-gradient(to left,#240567,#64049c)")),
+                        dispatch(setColorStyled("#240567")),
                         dispatch(setColorSeccionHabilidad("bg-degradadoitemonce")),
                         dispatch(setColorSeccionContacto("bg-degradadoitemonce")),
 
@@ -266,7 +266,7 @@ export default function ItemsHabilidades({valorItem,clickItem}){
                         dispatch(setColorBotonExperiencia("bg-transparent hover:border-celesteclaro hover:bg-degradadohocercategoria  border-2 border-white"))
             case 12:
             return dispatch(setColorAspecto("bg-degradadoitemdoce")),
-                    dispatch(setColorStyled("linear-gradient(to left,#46cdcf,#3d84a7)")),
+                    dispatch(setColorStyled("#3d84a7")),
                     dispatch(setColorSeccionHabilidad("bg-degradadoitemdoce")),
                     dispatch(setColorSeccionContacto("bg-degradadoitemdoce")),
 

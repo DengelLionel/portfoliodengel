@@ -9,13 +9,11 @@ export default function CartaExperiencia({trabajoTitulo,AbrirModal,nId,paginaExp
 
     },[dispatch])
     const getColorCarta=useSelector(stateColorCartaExperiencia)
-    const getColorBotonCarta=useSelector(stateColorBotonExperiencia)
-    const cartaClaseBoton=`font-medium w-[130px] ${getColorBotonCarta} shadow-xl text-white text-center p-[5px] rounded-md sm:w-[180px] sm:p-[8px] xl:text-xl xl:w-full xl:rounded-xl lg:text-lg 2xl:text-2xl 2xl:w-[250px] 2xl:p-[10px] duration-1000 transition-all`
-    const cartaClase=`w-[200px] p-[12px] lg:w-[300px] lg:h-[300px] ${getColorCarta}  rounded-xl xl:w-[300px] xl:h-[300px] xl:p-[15px] 2xl:w-[350px] 2xl:h-[350px]`
+    const getColorBotonCarta=useSelector(stateColorBotonExperiencia)    
     return(
         <>
         
-        <article class={cartaClase}>
+        <article class={`w-[200px] p-[12px] lg:w-[300px] lg:h-[300px] duration-1000 transition-all ${getColorCarta}  rounded-xl xl:w-[300px] xl:h-[300px] xl:p-[15px] 2xl:w-[350px] 2xl:h-[350px]`}>
             <h3 class="font-bold font-robotob text-center text-white ml-2  xl:text-xl lg:text-lg 2xl:text-2xl">{trabajoTitulo}</h3>
             <div className=" flex flex-row justify-center xl:h-[150px] items-center gap-2">
                 {paginaExperiencia===""?(<div className="bg-blue-600 w-[70px] h-[70px] flex flex-row justify-center items-center rounded-full hover:bg-blue-900 hover:shadow-sm xl:shadow-xl cursor-no-drop duration-1000 transition-all">
@@ -39,7 +37,7 @@ export default function CartaExperiencia({trabajoTitulo,AbrirModal,nId,paginaExp
                
                 </div>
                 <button onClick={()=>{AbrirModal(); dispatch(setIdExperiencia(nId))}} className="flex  justify-center items-center mt-[20px] cursor-pointer w-full">
-                <div className={cartaClaseBoton}>
+                <div className={`font-medium w-[130px] ${getColorBotonCarta} shadow-xl text-white text-center p-[5px] rounded-md sm:w-[180px] sm:p-[8px] xl:text-xl xl:w-full xl:rounded-xl lg:text-lg 2xl:text-2xl 2xl:w-[250px] 2xl:p-[10px] duration-1000 transition-all`}>
                     <span>More Information</span>
                 </div>
                 </button>

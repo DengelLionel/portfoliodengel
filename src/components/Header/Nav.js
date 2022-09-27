@@ -77,9 +77,9 @@ import ButoonTema from "./ButtonTema"
     return(
      
         <NavBarStyle 
-        valorScroll={valorScroll} openState={valorF} fondoNav={colorStyled}>
+        valorScroll={valorScroll}  openState={valorF} fondoNav={colorStyled}>
             
-               <Link to="/" className={itemNav1} onClick={()=>{scrollToAnchorI();CategoriaValor()}}>HOME</Link>
+               <Link to="/" className={itemNav1}  onClick={()=>{scrollToAnchorI();CategoriaValor()}}>HOME</Link>
                 <a className={itemNav2} onClick={()=>{scrollToAnchorP();CategoriaValor()}}>PROJECTS</a>
                 <a className={itemNav3} onClick={()=>{scrollToAnchorH();CategoriaValor()}} > SKILLS</a>
                 <a className={itemNav4} onClick={()=>{scrollToAnchorE();CategoriaValor()}}>EXPERIENCES</a>
