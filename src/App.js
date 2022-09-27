@@ -8,13 +8,14 @@ import DesarrolloMovil from "./Pages/DesarrolloMovil"
 import DiseñoGrafico from "./Pages/DiseñoGrafico"
 import { Provider } from 'react-redux';
 import store from "./redux/store";
+
 function App() {
- 
+
   
 
   return (
     
-    <section className="app" onContextMenu={(e)=>e.preventDefault()}>
+    <section className='' onContextMenu={(e)=>e.preventDefault()}>
        
       <Provider store={store}>
       <BrowserRouter>

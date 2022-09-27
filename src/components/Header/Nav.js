@@ -11,9 +11,11 @@ import { useSelector, useDispatch } from "react-redux";
 import {setValorCategoriaNav} from "../../redux/slices/navActivo"
 import {stateColorStyled,stateColorLineaHoverNavItems} from "../../redux/slices/cambioAspectoPagina";
 import ButoonTema from "./ButtonTema"
+
  function Nav({openState}){
     const [acceso,setAcceso]=useState(false);
     const dispatch=useDispatch();
+
     const [valor,setValor]=useState("");
     const [valorCategori,setValorCategori]=useState(true);
     const colorStyled=useSelector(stateColorStyled);
@@ -22,7 +24,7 @@ import ButoonTema from "./ButtonTema"
      
         valorNav();
         CategoriaValor();
-        valorF();
+        valorFinal();
     },[dispatch,acceso])
     const handleButton=()=>{
 
@@ -35,12 +37,12 @@ import ButoonTema from "./ButtonTema"
         const CategoriaValor=()=>{
             setValorCategori(true)
             if(valorCategori===true){
-                setValor("-100");
+                setValor("-100%");
                 dispatch(setValorCategoriaNav(false));
                  setValorCategori(false) 
                 return valor;
             }   
-            if(valorCategori===false){
+            else if(valorCategori===false){
                 setValor("0");
                 dispatch(setValorCategoriaNav(true));
                 return valor;
@@ -55,21 +57,22 @@ import ButoonTema from "./ButtonTema"
         dispatch(setValorCategoriaNav(true));
         return  valor;
         }
-         if(openState===false){
+         else if(openState===false){
          setValor("-100%")
          dispatch(setValorCategoriaNav(false));
          return  valor;
         }                                            
     }
    
-    const valorF=()=>{
+    const valorFinal=()=>{
         if(openState===false){
             return valorNav()
         }
-        if(valorCategori===true){
+        else if(valorCategori===true){
            return CategoriaValor()
         }
     }
+    console.log("valor ",valor)
     const itemNav1=`pb-[20px]  font-ronsard font-bold cursor-pointer xl:p-[15px] border-2  border-transparent ${getColorBodeItem} xl:before:shadow-xl  sm:p-[5px] sm:text-sm lg:p-[20px] 2xl:text-2xl leading-relaxed tracking-widest xl:text-xl duration-1000 transition-all`;
     const itemNav2=`font-ronsard  font-bold pb-[20px] cursor-pointer xl:p-[15px] border-2 border-transparent ${getColorBodeItem}  xl:before:shadow-xl  sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl  leading-relaxed tracking-widest sm:hidden duration-1000 transition-all`;
     const itemNav3=`font-ronsard font-bold pb-[20px]  cursor-pointer xl:p-[15px] border-2 border-transparent ${getColorBodeItem} xl:hover:before:shadow-xl sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl  leading-relaxed tracking-widest xl:text-xl duration-1000 transition-all`;
@@ -77,7 +80,9 @@ import ButoonTema from "./ButtonTema"
     return(
      
         <NavBarStyle 
-        valorScroll={valorScroll}  openState={valorF} fondoNav={colorStyled}>
+        valorScroll={valorScroll}
+          openState={valorFinal}
+           fondoNav={colorStyled}>
             
                <Link to="/" className={itemNav1}  onClick={()=>{scrollToAnchorI();CategoriaValor()}}>HOME</Link>
                 <a className={itemNav2} onClick={()=>{scrollToAnchorP();CategoriaValor()}}>PROJECTS</a>

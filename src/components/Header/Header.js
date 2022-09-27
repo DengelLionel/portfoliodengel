@@ -15,14 +15,14 @@ import Nav from "./Nav";
 const Encabezado=()=>{
     const dispatch=useDispatch();
     const openState=useSelector(valorCategory);
-    console.log("val",openState)
+
     const colorstyled=useSelector(stateColorStyled)
     const handleClick=()=>{
         dispatch(setValorCategoriaNav(!openState));
     }
    
     const [acceso,setAcceso]=useState(false);
-
+    
    
     
     const [scrollYY,setScrollYY]=useState(0);
