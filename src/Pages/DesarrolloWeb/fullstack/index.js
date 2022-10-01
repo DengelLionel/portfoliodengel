@@ -1,5 +1,6 @@
 import CartaDesarrollo from "../CartaDesarrollo"
 import {datosProyectosBackendAndFrontend} from "../../../DatosUser/datosProyecto"
+import ReactGA from "react-ga";
 export default function FullStack({colorTitulo}){
     /* const colorTextoTitulo=`${colorTitulo} font-bold font-robotom text-md pl-2 lg:text-lg xl:text-xl 2xl:text-2xl` */
     return(
@@ -9,6 +10,12 @@ export default function FullStack({colorTitulo}){
         
         <section className="duration-1000 transition-all grid grid-cols-[auto] gap-4 lg:grid lg:grid-cols-[auto,auto,auto] lg:gap-4 lg:w-full lg:mt-[50px] xl:flex xl:flex-wrap md:grid md:grid-cols-[auto,auto] md:gap-4">
         {datosProyectosBackendAndFrontend?.map(e=>{
+            ReactGA.event({
+                category:e.title,
+                action:"test action",
+                label:"test label",
+                value:e.id,
+            })
             return(
                 <CartaDesarrollo
                  key={e.id} 

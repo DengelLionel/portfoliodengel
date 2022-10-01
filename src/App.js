@@ -8,7 +8,9 @@ import DesarrolloMovil from "./Pages/DesarrolloMovil"
 import DiseñoGrafico from "./Pages/DiseñoGrafico"
 import { Provider } from 'react-redux';
 import store from "./redux/store";
-
+import ReactGA from "react-ga"
+const TRACKING_ID="UA-243853580-1";
+ReactGA.initialize(TRACKING_ID)
 function App() {
 
   
