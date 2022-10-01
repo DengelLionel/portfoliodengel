@@ -72,7 +72,7 @@ import ButoonTema from "./ButtonTema"
            return CategoriaValor()
         }
     }
-    console.log("valor ",valor)
+
     const itemNav1=`pb-[20px]  font-ronsard font-bold cursor-pointer xl:p-[15px] border-2  border-transparent ${getColorBodeItem} xl:before:shadow-xl  sm:p-[5px] sm:text-sm lg:p-[20px] 2xl:text-2xl leading-relaxed tracking-widest xl:text-xl duration-1000 transition-all`;
     const itemNav2=`font-ronsard  font-bold pb-[20px] cursor-pointer xl:p-[15px] border-2 border-transparent ${getColorBodeItem}  xl:before:shadow-xl  sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl  leading-relaxed tracking-widest sm:hidden duration-1000 transition-all`;
     const itemNav3=`font-ronsard font-bold pb-[20px]  cursor-pointer xl:p-[15px] border-2 border-transparent ${getColorBodeItem} xl:hover:before:shadow-xl sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl  leading-relaxed tracking-widest xl:text-xl duration-1000 transition-all`;

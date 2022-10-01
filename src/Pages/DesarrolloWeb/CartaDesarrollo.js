@@ -1,4 +1,11 @@
+/* import ReactGA from "react-ga"; */
 export default function CartaDesarrollo({title,image,item1,item2,item3,item4,github,view}){
+   /*  ReactGA.event({
+        category:e.title,
+        action:"test action",
+        label:"test label",
+        value:e.id,
+    }) */
     const casillero1=`${item1&&item1.colorfondo} text-white  flex justify-center items-center  font-robotor p-[6px] cursor-default`
     const casillero2=`${item2&&item2.colorfondo} text-white  flex justify-center items-center  font-robotor p-[6px] cursor-default`
     const casillero3=`${item3&&item3.colorfondo} text-white  flex justify-center items-center  font-robotor p-[6px] cursor-default`
@@ -25,7 +32,10 @@ export default function CartaDesarrollo({title,image,item1,item2,item3,item4,git
                 (<button  className="text-white font-robotom bg-blue-500 flex justify-center items-center w-[70px] rounded-md p-[4px] cursor-no-drop">
                     View
                 </button>):
-                (<a href={view}  target="_blank" className="text-white font-robotom bg-blue-500 flex justify-center items-center w-[70px] rounded-md p-[4px] ">
+                (<a
+                 href={view}
+                
+                target="_blank" className="text-white font-robotom bg-blue-500 flex justify-center items-center w-[70px] rounded-md p-[4px] ">
                     View
                 </a>)}
                 
