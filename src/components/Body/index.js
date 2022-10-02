@@ -1,7 +1,7 @@
-import SeccionBienvenido from "./SeccionBienvenido";
-import Portafolio from "./Portafolio";
-import Habilidades from "./Habilidades";
-import Experiencia from "./Experiencia";
+import SectionWelcome from "./SectionWelcome";
+import Projects from "./Projects";
+import Kills from "./Kills";
+import Experience from "./Experience";
 import { useEffect } from "react";
 
 export default function Body({colorTitulo}){
@@ -13,12 +13,12 @@ useEffect(()=>{
     return ( 
             <>
 
-         <SeccionBienvenido/>
-         <Portafolio  colortexto={colorTitulo}/>
+         <SectionWelcome/>
+         <Projects  colortexto={colorTitulo}/>
          
-         <Habilidades  colortexto={colorTitulo}/>
+         <Kills  colortexto={colorTitulo}/>
         
-         <Experiencia colortexto={colorTitulo}/>
+         <Experience colortexto={colorTitulo}/>
 
             </>
 

@@ -1,15 +1,15 @@
-import Triangulo from "./secciones/Triangulo";
-import ItemsHabilidades from "./ItemsHabilidad";
+import Triangle from "./secciones/Triangle";
+import ItemsKills from "./secciones/ItemsKills";
 import {stateGrayScale,setGrayScale} from "../../redux/slices/cambioColorPagina";
 import { useSelector,useDispatch } from "react-redux";
 import {statecolorHabilidad} from "../../redux/slices/cambioAspectoPagina";
-export default function Habilidades({colortexto}){
+export default function Kills({colortexto}){
    
    const dispatch=useDispatch()
-    const valorClickItem=useSelector(stateGrayScale);
+
     const colorStyled=useSelector(statecolorHabilidad)
     const clickItem=()=>{
-        dispatch(setGrayScale(!valorClickItem));
+        dispatch(setGrayScale(true));
     }
    
     return(
@@ -19,13 +19,13 @@ export default function Habilidades({colortexto}){
         <div className=" w-full h-[100px] mt-[70px] mb-[70px] flex justify-center items-center ">
            
            
-            <Triangulo/>
+            <Triangle/>
             </div>
          
             
      <section className={`${colorStyled&&colorStyled} transition-all duration-1000  p-[20px]  xl:h-[auto] xl:p-[40px] xl:mt-[130px] flex flex-col justify-center items-center  xl:flex xl:flex-row xl:justify-center xl:items-center rounded-tl-[50px] rounded-tr-[50px] rounded-bl-[50px] rounded-br-[50px] xl:rounded-tl-[140px] xl:rounded-br-[140px] `}>
      <p className="text-white font-robotob text-xl font-bold xl:text-3xl">CHOOSE YOUR FAVORITE SKILL</p>
-         <ItemsHabilidades valorItem={valorClickItem} clickItem={clickItem}/>
+         <ItemsKills clickItem={clickItem}/>
      </section>
      </div>
         

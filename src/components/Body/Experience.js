@@ -1,14 +1,14 @@
-import CartaExperiencia from "./CartaExperiencia";
+import CartaExperiencia from "./Cartas/CartaExperiencia";
 import { useDispatch,useSelector } from "react-redux";
 import {setColorExterior} from "../../redux/slices/ColorExteriorModals";
 import { obtenerId} from "../../redux/slices/idExperiencia"
 import {setColorFondoModal} from "../../redux/slices/ColorFondoModal";
 import { useEffect } from "react";
-import Modal from "./Modal"
+import Modal from "./secciones/Modal"
 import { useState } from "react"
 import {experiencia} from "../../DatosUser/experiencia";
-import Triangulo from "./secciones/Triangulo";
-export default function Experiencia({colortexto}){
+import Triangle from "./secciones/Triangle";
+export default function Experience({colortexto}){
     const [modalEstado,setModalEstado]=useState(false)
     const [closee,setClosee]=useState(true)
     
@@ -35,7 +35,7 @@ export default function Experiencia({colortexto}){
         <div className="h-auto sm:h-auto md:h-auto lg:h-[80vh]  2xl:h-auto xl:mb-[100px] ">
         <h2 id="experiencia" className={subtitulo}>EXPERIENCES</h2>
         <div className=" w-full h-[100px] mb-[50px] flex justify-center items-center  sm:mb-[70px] md:mb-[90px] 2xl:mb-[260px] ">
-            <Triangulo/>
+            <Triangle/>
             </div>
         
          

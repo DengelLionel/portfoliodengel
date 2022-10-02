@@ -3,7 +3,7 @@ import {stateColor,stateColorPerfil,stateColorTextoSobremi,stateColorBoton,state
 
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
-export default function SeccionBienvenido(){
+export default function SectionWelcome(){
         const getColor=useSelector(stateColor)
         const getColorPerfil=useSelector(stateColorPerfil)
         const getColorTextoSobremi=useSelector(stateColorTextoSobremi)

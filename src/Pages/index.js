@@ -1,7 +1,7 @@
-import Presentacionvideo from "../components/Header/Presentacion_video";
+import ImagePresentation from "../components/Header/ImagePresentation";
 import Body from "../components/Body/index";
 
-import Contacto from "../components/Body/Contacto";
+import Contact from "../components/Body/Contact";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import {cambioTema} from "../redux/slices/cambioTema"
@@ -27,9 +27,9 @@ export default function PortafolioHome(){
        
         <body className={cambiotema}>
             
-        <Presentacionvideo/>
+        <ImagePresentation/>
         <Body colorTitulo={colorTitulo}/>
-        <Contacto colortexto={colorTitulo}/>
+        <Contact colortexto={colorTitulo}/>
             
         </body>
         </>

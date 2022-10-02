@@ -1,7 +1,7 @@
-import {colorFondoState} from "../../redux/slices/ColorFondoModal";
+import {colorFondoState} from "../../../redux/slices/ColorFondoModal";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
-import {ColorExteriorModal} from "../../redux/slices/ColorExteriorModals";
+import {ColorExteriorModal} from "../../../redux/slices/ColorExteriorModals";
 import ReactDOM from "react-dom";
 export default function Modal({children,modalEstado,close}){
     const colorfondo=useSelector(colorFondoState);

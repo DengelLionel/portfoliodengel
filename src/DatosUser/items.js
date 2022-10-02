@@ -1,4 +1,4 @@
-export const habilidades=[
+export const items=[
     {id:1,
      item:"img/habilidades/01.svg",
     state:false

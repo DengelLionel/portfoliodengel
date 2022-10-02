@@ -1,19 +1,16 @@
-import { useState,useEffect } from "react";
-import { habilidades } from "./secciones/ItemsH";
-import {stateGrayScale} from "../../redux/slices/cambioColorPagina";
-import {setColorAspecto,setColorStyled,setColorSeccionHabilidad,setColorSeccionContacto,setColorPerfil,setColorTextoSobromi,setColorBoton,setColorBordeBoton,setColorHoverBordeBoton,setColorBeforeBoton,setColorLineaHoverNavItems,setColorTriangulo,setTituloColorNoche,setTituloColorDia,setColorBotonCategoriaProyectoActivo,setColorBotonCategoriaProyecto,setColorBotonCategoriaProyectoHover,setColorCartaExperiencia,setColorBotonExperiencia,setColorParrafoBienvenida} from "../../redux/slices/cambioAspectoPagina";
+import { useState } from "react"
+import { items } from "../DatosUser/items";
+import {setColorAspecto,setColorStyled,setColorSeccionHabilidad,setColorSeccionContacto,setColorPerfil,setColorTextoSobromi,setColorBoton,setColorBordeBoton,setColorHoverBordeBoton,setColorBeforeBoton,setColorLineaHoverNavItems,setColorTriangulo,setTituloColorNoche,setTituloColorDia,setColorBotonCategoriaProyectoActivo,setColorBotonCategoriaProyecto,setColorBotonCategoriaProyectoHover,setColorCartaExperiencia,setColorBotonExperiencia,setColorParrafoBienvenida} from "../redux/slices/cambioAspectoPagina";
+import { stateGrayScale } from "../redux/slices/cambioColorPagina";
 import { useDispatch,useSelector } from "react-redux";
-export default function ItemsHabilidades({valorItem,clickItem}){
-   
-  const [stateItem,setStateItem]=useState({id:null,state:valorItem})
-    const [idHabilidad,setIdHabilidad]=useState([])
-    const valorItemFinal=useSelector(stateGrayScale)
+export const useChangeColorUnderItems=()=>{
+    const valorItem=useSelector(stateGrayScale)
+    const [stateItem,setStateItem]=useState({id:null,state:valorItem&&valorItem})
     const dispatch=useDispatch()
-   
-
+    
     const stadoDelItem=(item1,item2)=>{
         setStateItem({id:item1,state:!item2})
-        habilidades.map((skills)=>{
+        items.map((skills)=>{
             if(skills.id===stateItem.id){
                 skills.state=!item2;
             }
@@ -291,36 +288,5 @@ export default function ItemsHabilidades({valorItem,clickItem}){
         }
       
     }
-    let clase=`${stateItem.id && stateItem.state?"w-[100px] h-[100px] cursor-pointer grayscale-0":"w-[100px] h-[100px] cursor-pointer grayscale"} `
-
-    useEffect(()=>{
-        cambioColor()
-    },[clase,valorItem,stateItem.id,dispatch])
-
- 
-    
-    return(
-        <div className="grid grid-cols-[repeat(2,auto)]  gap-[20px] p-[40px] sm:grid-cols-[auto,auto,auto] md:grid md:grid-cols-[auto,auto,auto,auto] xl:grid xl:grid-cols-[repeat(4,auto)] xl:gap-[50px] lg:grid lg:grid-cols-[auto,auto,auto,auto,auto]">
-          
-            {habilidades.map(habilidad=>{
-                     
-                        
-                        return habilidad.state===false?(
-                            <div className={"w-[100px] h-[100px] cursor-pointer grayscale"}>
-                        <img loading="lazy" alt="img" key={habilidad.id} onClick={()=>{clickItem();stadoDelItem(habilidad.id,habilidad.state=true)}}  src={habilidad.item}/>
-                        </div>
-                        ):(
-                            <div className={stateItem.id && habilidad.state===true ?"w-[100px] h-[100px] cursor-pointer grayscale-0":"w-[100px] h-[100px] cursor-pointer grayscale"}>
-                            <img loading="lazy" alt="img" key={habilidad.id} onClick={()=>{clickItem();stadoDelItem(habilidad.id,habilidad.state=false)}}  src={habilidad.item}/>
-                            </div>
-                        ) 
-                    
-                   
-                 
-            }
-              
-
-            )}
-         </div>
-    )
+    return {stateItem,stadoDelItem,cambioColor}
 }

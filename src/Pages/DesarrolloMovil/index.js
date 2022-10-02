@@ -1,4 +1,4 @@
-import CartaDesarrollo from "../DesarrolloWeb/CartaDesarrollo"
+import CartaDesarrollo from "../../components/Body/Cartas/CartaDesarrollo"
 import { datosProyectosMobil } from "../../DatosUser/datosProyecto"
 export default function DesarrolloMovil(){
     return(

@@ -1,5 +1,4 @@
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import SobreMi from './Pages/SobreMi/SobreMi';
 import './css/App.css';
 import PortafolioHome from './Pages';
 import DesarrolloWeb from "./Pages/DesarrolloWeb"
@@ -28,8 +27,6 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<PortafolioHome/>}/>
-       
-          <Route  path="/SobreMi" index element={<SobreMi/>}/>
           <Route  path="/desarrolloweb"  element={<DesarrolloWeb/>}>
 
     

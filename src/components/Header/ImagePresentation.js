@@ -1,9 +1,9 @@
 import '../../css/Header/Presentacion_video.css'
 import "../../css/Body/AnimacionLetras.css";
-import Encabezado from "../Header/Header";
+import Encabezado from "./Header";
 
 import { useEffect } from 'react';
-export default function Presentacionvideo(){
+export default function ImagePresentation(){
   useEffect(()=>{
 
   },[])

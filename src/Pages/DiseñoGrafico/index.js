@@ -1,4 +1,4 @@
-import CartaDesarrollo from "../DesarrolloWeb/CartaDesarrollo"
+import CartaDesarrollo from "../../components/Body/Cartas/CartaDesarrollo"
 export default function DisenoGrafico(){
     return(
         

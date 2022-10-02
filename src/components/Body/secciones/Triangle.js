@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux"
 import {stateColorTriangulo} from "../../../redux/slices/cambioAspectoPagina"
-export default function Triangulo(){
+export default function Triangle(){
     const getColorTriangulo=useSelector(stateColorTriangulo)
    
     return(

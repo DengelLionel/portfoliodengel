@@ -1,4 +1,4 @@
-import CartaDesarrollo from "../CartaDesarrollo"
+import CartaDesarrollo from "../../../components/Body/Cartas/CartaDesarrollo"
 import {datosProyectosBackendAndFrontend} from "../../../DatosUser/datosProyecto"
 
 export default function FullStack({colorTitulo}){

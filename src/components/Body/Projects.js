@@ -1,12 +1,12 @@
 import { useEffect,useState } from "react";
-import Triangulo from "./secciones/Triangulo";
+import Triangle from "./secciones/Triangle";
 import ComponentesBackAndFrond from "../../Pages/DesarrolloWeb/ComponentesBackAndFrond";
 import DesarrolloMovil from "../../Pages/DesarrolloMovil";
 import DisenoGrafico from "../../Pages/DiseñoGrafico";
 import {stateColorBotonCategoriaProyecto,stateColorBotonCategoriaProyectoActivo,stateColorBotonCategoriaProyectoHover} from "../../redux/slices/cambioAspectoPagina";
 import { useSelector } from "react-redux";
 
-export default function Portafolio({colortexto}){
+export default function Projects({colortexto}){
 
     const [webDevelopment,setWebDevelopment]=useState(true)
     const [movilDevelopment,setMovilDevelopment]=useState(false)
@@ -60,7 +60,7 @@ export default function Portafolio({colortexto}){
         <section  className=" h-[155vh] sm:h-auto md:auto lg:h-[155vh] xl:h-auto  2xl:h-[145vh] z-[25]  ">
         <h2 id="portafolio" className={`duration-1000 transition-all relative top-[85px] z-[50] font-bold font-robotob text-center text-[2.25rem] xl:text-[3.75rem] mb-[30px] xl:relative xl:top-[90px] 2xl:text-[3.75rem] 2xl:relative 2xl:top-[165px] ${colortexto}`}>PROJECTS</h2>
             <div className=" w-full h-[100px]  2xl:mt-[100px] 2xl:mb-[150px] flex justify-center items-center mb-[120px]">
-            <Triangulo/>
+            <Triangle/>
             
             
             </div>

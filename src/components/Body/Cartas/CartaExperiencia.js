@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import {setIdExperiencia} from "../../redux/slices/idExperiencia";
+import {setIdExperiencia} from "../../../redux/slices/idExperiencia";
 import { useDispatch, useSelector } from "react-redux";
-import {stateColorCartaExperiencia,stateColorBotonExperiencia} from "../../redux/slices/cambioAspectoPagina";
+import {stateColorCartaExperiencia,stateColorBotonExperiencia} from "../../../redux/slices/cambioAspectoPagina";
 export default function CartaExperiencia({trabajoTitulo,AbrirModal,nId,paginaExperiencia,paginaHithub}){
     const dispatch=useDispatch()
    
