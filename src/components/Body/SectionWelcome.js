@@ -54,7 +54,7 @@ export default function SectionWelcome(){
     </section>
         <br/>
          <section className="font-medium grid items-center justify-center relative top-[60px] md:relative md:-left-[220px]   xl:relative xl:top-[40px] grid-cols-[repeat(3,auto)] gap-[20px] lg:relative lg:top-[80px] 2xl:top-[100px]"> 
-         <a type="button" className={colorsBoton} href="media/cvdevelopmentdengel.pdf" download >DOWNLOAD CV</a> 
+         <a type="button" className={colorsBoton} href="media/CV_DENGEL_RIVERA_OCTUBRE_05_2022.pdf" download >DOWNLOAD CV</a> 
         <a type="button" className={colorsBoton}  onClick={scrollToAnchorP}>PROJECTS</a> 
         <a type="button" className={colorsBotonEspecial}  onClick={scrollToAnchorC}>CONTACT</a>
         </section>

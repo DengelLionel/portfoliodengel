@@ -11,7 +11,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {setValorCategoriaNav} from "../../redux/slices/navActivo"
 import {stateColorStyled,stateColorLineaHoverNavItems} from "../../redux/slices/cambioAspectoPagina";
 import ButoonTema from "./ButtonTema"
-
+import ButtonLenguage from "./Secciones/ButtonLenguage";
  function Nav({openState}){
     const [acceso,setAcceso]=useState(false);
     const dispatch=useDispatch();
@@ -83,7 +83,10 @@ import ButoonTema from "./ButtonTema"
         valorScroll={valorScroll}
           openState={valorFinal}
            fondoNav={colorStyled}>
-            
+               
+               <article className="hidden md:block md:relative md:right-[60%]">
+                <ButtonLenguage/>
+                </article>
                <Link to="/" className={itemNav1}  onClick={()=>{scrollToAnchorI();CategoriaValor()}}>HOME</Link>
                 <a className={itemNav2} onClick={()=>{scrollToAnchorP();CategoriaValor()}}>PROJECTS</a>
                 <a className={itemNav3} onClick={()=>{scrollToAnchorH();CategoriaValor()}} > SKILLS</a>
@@ -92,6 +95,15 @@ import ButoonTema from "./ButtonTema"
                 <a className="hidden xl:block xl:p-[15px] sm:block sm:p-[5px] sm:text-sm lg:p-[8px] 2xl:text-2xl"  type="button">
                     <ButoonTema handleButton={handleButton}/>
                 </a>
+                <article className="font-ronsard font-bold cursor-pointer text-white md:hidden  ">
+                    <article className="flex justify-center items-center">
+                <ButtonLenguage/>
+                <button className="p-[15px]">Español</button>
+                <button>English</button>
+                </article>
+                
+                </article>
+               
          </NavBarStyle> 
        
     )

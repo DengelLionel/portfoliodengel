@@ -1,15 +1,4 @@
-export const datosProyectosBackendAndFrontend=[{
-    id:0,
-    title:"FORMULARIO CON ARCHIVOS PDF",
-    image:"encuestaformulario.jpg",
-    item1:{title:"Laravel",colorfondo:"bg-red-700"},
-    item2:{title:"PHP",colorfondo:"bg-purple-700"},
-    item3:{title:"MySql",colorfondo:"bg-blue-700"},
-    item4:{title:"Css",colorfondo:"bg-sky-700"},
-    github:"https://github.com/DengelLionel/formulario-con-archivos-pdf-e-imagenes.git",
-    view:"https://youtu.be/75VTQmeim6s"
-    
-},
+export const datosProyectosBackendAndFrontend=[
 {
     id:1,
     title:"CRUD",
