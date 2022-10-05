@@ -30,7 +30,7 @@ export default function ImagePresentation(){
                 <div className="destello"></div>
               </div>
               <div  className="flex justify-center items-center xl:flex xl:justify-center xl:items-center lg:flex lg:justify-center lg:items-center md:hidden sm:hidden ">
-            <h4  className="font-bold text-center font-robotob tracking-wide text-yellow-500 bg-degradadonegro w-full h-[30px] lg:text-xl xl:text-2xl 2xl:text-2xl">Developer FullStack</h4>
+            <h4  className="font-bold text-center font-robotob tracking-wide text-yellow-500 bg-degradadonegro w-full h-[30px] lg:text-xl xl:text-2xl 2xl:text-2xl">Frontend Developer</h4>
             </div>
             </section>
             </div>
