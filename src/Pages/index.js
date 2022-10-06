@@ -5,7 +5,7 @@ import Contact from "../components/Body/Contact";
 import { useEffect } from "react";
 import { useSelector,useDispatch } from "react-redux";
 import {cambioTema} from "../redux/slices/cambioTema";
-import {setOpenMenuLenguage} from "../redux/slices/cambioAspectoPagina";
+import {setOpenMenuLenguage,stateOpenMenuLenguage} from "../redux/slices/cambioAspectoPagina";
 import {stateColorTituloNoche,stateColorTituloDia} from "../redux/slices/cambioAspectoPagina"
 export default function PortafolioHome(){
     const cambioTemas=useSelector(cambioTema);
@@ -17,6 +17,7 @@ export default function PortafolioHome(){
     const colorsecund=getColorTituloDia;
     const colorTitulo=`${cambioTemas?colorsecund:colorblanco}`
     const cambiotema=`${cambioTemas?colorbodyblanco:colorbodynegro}`
+    const openMenuLenguage=useSelector(stateOpenMenuLenguage)
     const dispatch=useDispatch();
    
         
@@ -24,12 +25,12 @@ export default function PortafolioHome(){
     useEffect(()=>{
 
     },[])
-    
+
     return(
         <> 
        
        
-        <body onClick={()=>dispatch(setOpenMenuLenguage(false))} className={cambiotema}>
+        <body onClick={()=>dispatch(setOpenMenuLenguage(!openMenuLenguage))} className={cambiotema}>
             
         <ImagePresentation/>
         <Body colorTitulo={colorTitulo}/>
