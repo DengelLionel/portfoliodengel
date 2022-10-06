@@ -14,7 +14,7 @@ export default function Modal({children,modalEstado,close}){
     let modal=`${modalEstado===true&&fondoFull}`
     useEffect(()=>{
     },[colorfondo,colorExteriorMostrar])
-    let fondo=` ${colorExteriorMostrar===true?"fixed top-0  bg-negrotransparente z-[80] w-full h-full flex justify-center items-center":"bg-transparent "}`
+    let fondo=` ${colorExteriorMostrar===true?"fixed top-0  bg-negrotransparente z-[90] w-full h-full flex justify-center items-center":"bg-transparent "}`
     return  (
 
         <>

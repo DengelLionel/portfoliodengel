@@ -20,6 +20,7 @@ const initialState={
     colorCartaExperiencia:"bg-degradadoceleste ",
     colorBotonExperiencia:"bg-degradadoceleste border-2 border-azul3 hover:border-celesteclaro",
     colorParrafoBienvenida:"text-white",
+    openMenuLenguage:false,
 
 }
 const cambioAspectoPagina=createSlice({
@@ -85,10 +86,14 @@ const cambioAspectoPagina=createSlice({
         },
         setColorParrafoBienvenida(state,action){
             state.colorParrafoBienvenida=action.payload;
+        },
+        setOpenMenuLenguage(state,action){
+            state.openMenuLenguage=action.payload;
         }
 
     }
 })
+export const stateOpenMenuLenguage=(state)=>state.cambioAspectoPagina.openMenuLenguage;
 export const stateColor=(state)=>state.cambioAspectoPagina.color;
 export const stateColorStyled=(state)=>state.cambioAspectoPagina.colorstyled;
 export const statecolorHabilidad=(state)=>state.cambioAspectoPagina.colorFondoHabilidad;
@@ -109,5 +114,5 @@ export const stateColorBotonCategoriaProyectoHover=(state)=>state.cambioAspectoP
 export const stateColorCartaExperiencia=(state)=>state.cambioAspectoPagina.colorCartaExperiencia;
 export const stateColorBotonExperiencia=(state)=>state.cambioAspectoPagina.colorBotonExperiencia;
 export const stateColorParrafoBienvenida=(state)=>state.cambioAspectoPagina.colorParrafoBienvenida;
-export const {setColorAspecto,setColorStyled,setColorSeccionHabilidad,setColorSeccionContacto,setColorPerfil,setColorTextoSobromi,setColorBoton,setColorBordeBoton,setColorHoverBordeBoton,setColorBeforeBoton,setColorLineaHoverNavItems,setColorTriangulo,setTituloColorNoche,setTituloColorDia,setColorBotonCategoriaProyectoActivo,setColorBotonCategoriaProyecto,setColorBotonCategoriaProyectoHover,setColorCartaExperiencia,setColorBotonExperiencia,setColorParrafoBienvenida}=cambioAspectoPagina.actions;
+export const {setColorAspecto,setColorStyled,setColorSeccionHabilidad,setColorSeccionContacto,setColorPerfil,setColorTextoSobromi,setColorBoton,setColorBordeBoton,setColorHoverBordeBoton,setColorBeforeBoton,setColorLineaHoverNavItems,setColorTriangulo,setTituloColorNoche,setTituloColorDia,setColorBotonCategoriaProyectoActivo,setColorBotonCategoriaProyecto,setColorBotonCategoriaProyectoHover,setColorCartaExperiencia,setColorBotonExperiencia,setColorParrafoBienvenida,setOpenMenuLenguage}=cambioAspectoPagina.actions;
 export default cambioAspectoPagina.reducer;

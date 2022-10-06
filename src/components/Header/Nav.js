@@ -9,17 +9,22 @@ import {scrollToAnchorI,
 import { valorScrollY} from "../../redux/slices/scrollYValor";
 import { useSelector, useDispatch } from "react-redux";
 import {setValorCategoriaNav} from "../../redux/slices/navActivo"
-import {stateColorStyled,stateColorLineaHoverNavItems} from "../../redux/slices/cambioAspectoPagina";
+import {stateColorStyled,stateColorLineaHoverNavItems,setOpenMenuLenguage,stateOpenMenuLenguage} from "../../redux/slices/cambioAspectoPagina";
 import ButoonTema from "./ButtonTema"
 import ButtonLenguage from "./Secciones/ButtonLenguage";
+import MenuLenguage from "./Secciones/MenuLenguage";
  function Nav({openState}){
     const [acceso,setAcceso]=useState(false);
     const dispatch=useDispatch();
-
+    const openMenuLenguage=useSelector(stateOpenMenuLenguage)
     const [valor,setValor]=useState("");
     const [valorCategori,setValorCategori]=useState(true);
     const colorStyled=useSelector(stateColorStyled);
     const getColorBodeItem=useSelector(stateColorLineaHoverNavItems)
+    const OpenMenuLenguage=()=>{
+        dispatch(setOpenMenuLenguage(true));
+    }
+    console.log("OPEN MENU : ",openMenuLenguage)
     useEffect(()=>{
      
         valorNav();
@@ -84,9 +89,10 @@ import ButtonLenguage from "./Secciones/ButtonLenguage";
           openState={valorFinal}
            fondoNav={colorStyled}>
                
-               <article className="hidden md:block md:relative md:right-[60%]">
-                <ButtonLenguage/>
+               <article  className="hidden md:block md:relative md:right-[60%]">
+                <ButtonLenguage OpenClick={OpenMenuLenguage}/>
                 </article>
+                {openMenuLenguage===true&&<MenuLenguage/>}
                <Link to="/" className={itemNav1}  onClick={()=>{scrollToAnchorI();CategoriaValor()}}>HOME</Link>
                 <a className={itemNav2} onClick={()=>{scrollToAnchorP();CategoriaValor()}}>PROJECTS</a>
                 <a className={itemNav3} onClick={()=>{scrollToAnchorH();CategoriaValor()}} > SKILLS</a>
