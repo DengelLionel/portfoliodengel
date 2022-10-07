@@ -40,7 +40,9 @@ export const datosProyectosBackendAndFrontend=[
 export const datosProyectosMobil=[
     {
         id:0,
-        title:"APP DE EJERCICIOS DE COLEGIO",
+        english:{title:"SCHOOL EXERCISES APP"},
+        espanish:{title:"APP DE EJERCICIOS DE COLEGIO"},
+        title:"",
         image:"proyectomobil1.png",
         item1:{title:"JAVA",colorfondo:"bg-blue-800"},
         item2:{title:"ANDROID STUDIO",colorfondo:"bg-green-800"},
