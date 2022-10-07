@@ -101,7 +101,7 @@ import {contentNav} from "../../DatosUser/Content";
           openState={valorFinal}
            fondoNav={colorStyled}>
                
-               <article  className="hidden md:block md:relative md:right-[60%]">
+               <article  className="hidden md:block md:absolute md:-left-[0] md:top-[0]">
                 <ButtonLenguage OpenClick={OpenMenuLenguage}/>
                 </article>
                 {openMenuLenguage===true&&<MenuLenguage ActiveEnglish={ActiveEnglish} ActiveEspanish={ActiveEspanish} />}
@@ -134,8 +134,8 @@ import {contentNav} from "../../DatosUser/Content";
                 <article className="font-ronsard font-bold cursor-pointer text-white md:hidden  ">
                     <article className="flex justify-center items-center">
                 <ButtonLenguage/>
-                <button className="p-[15px]">Español</button>
-                <button>English</button>
+                <button onClick={ActiveEspanish} className="p-[15px]">Español</button>
+                <button onClick={ActiveEnglish}>English</button>
                 </article>
                 
                 </article>

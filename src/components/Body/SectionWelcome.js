@@ -3,7 +3,7 @@ import {stateColor,stateColorPerfil,stateColorTextoSobremi,stateColorBoton,state
 
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
-export default function SectionWelcome(){
+export default function SectionWelcome({aboutMe,helloWork,paragraph1,paragraph2,paragraph3,buttonDownload,buttonProject,buttonContact}){
         const getColor=useSelector(stateColor)
         const getColorPerfil=useSelector(stateColorPerfil)
         const getColorTextoSobremi=useSelector(stateColorTextoSobremi)
@@ -15,7 +15,7 @@ export default function SectionWelcome(){
         const colorContenedor=`${getColor} duration-700 w-full h-[670px] z-[50] p-4  lg:h-[640px]  2xl:h-[800px] xl:rounded-bl-[130px] xl:rounded-br-[130px] rounded-bl-[50px]  md:h-[500px]  md:relative md:top-[40px] sm:rounded-br-[100%] sm:rounded-bl-[0px] sm:h-[500px]  sm:z-[70] sm:relative sm:-top-[80px]  `
         const colorPerfil=`hidden w-[160px] h-[160px] lg:w-[300px] lg:h-[300px] xl:w-[320px] xl:h-[320px] 2xl:w-[360px] 2xl:h-[360px] rounded-full ${getColorPerfil} sm:flex justify-center items-center sm:relative sm:-top-[30px] `
         const colorTextoSobremi=`duration-1000 transition-all font-bold text-xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-robotob ${getColorTextoSobremi} tracking-wide 2xl:mb-8 sm:mb-3`
-        const colorsBoton=`border-4 ${getColorBordeBoton} ${getColorBoton} p-[10px] font-bold text-sm font-robotob rounded text-white w-[130px] text-center ${getColorHoverBordeBoton} ${getColorBeforeBoton} xl:cursor-pointer xl:text-xl xl:w-[170px] xl:text-center xl:rounded-2xl xl:hover:shadow-xl  2xl:w-[220px] 2xl:text-2xl 2xl:p-[20px] lg:rounded-lg lg:text-lg lg:w-[200px] lg:text-center sm:relative sm:-top-[210px] sm:left-[200px]  md:relative md:-top-0 md:-left-0 duration-1000 transition-all`
+        const colorsBoton=`border-4 ${getColorBordeBoton} ${getColorBoton} p-[10px] font-bold text-sm font-robotob rounded text-white w-[140px] xl:w-[200px] text-center ${getColorHoverBordeBoton} ${getColorBeforeBoton} xl:cursor-pointer xl:text-xl xl:w-[170px] xl:text-center xl:rounded-2xl xl:hover:shadow-xl  2xl:w-[220px] 2xl:text-2xl 2xl:p-[20px] lg:rounded-lg lg:text-lg lg:w-[200px] lg:text-center sm:relative sm:-top-[210px] sm:left-[200px]  md:relative md:-top-0 md:-left-0 duration-1000 transition-all`
         const colorsBotonEspecial=`hidden xl:block font-bold border-4 ${getColorBordeBoton} ${getColorBoton} p-[10px] font-robotob rounded text-white ${getColorHoverBordeBoton} ${getColorBeforeBoton} xl:cursor-pointer xl:text-xl xl:w-[170px] xl:text-center xl:rounded-2xl lg:hidden xl:hover:shadow-xl 2xl:w-[220px] 2xl:text-2xl 2xl:p-[20px] lg:rounded-lg lg:text-lg lg:w-[200px] lg:text-center duration-1000 transition-all`
         const holamundo=`font-medium text-xl lg:text-xl xl:text-2xl  2xl:text-3xl font-robotom ${getColorParrafoBienvenida} tracking-wide sm:mb-3`
         const parrafo=`${getColorParrafoBienvenida} font-normal text-md lg:text-xl xl:text-2xl 2xl:text-3xl xl:p-2  font-robotor grid grid-rows-[auto,auto,auto] xl:grid xl:grid-rows-[auto,auto,auto]`
@@ -34,12 +34,12 @@ export default function SectionWelcome(){
             <section className=" xl:flex xl:justify-center xl:items-center  lg:flex lg:flex-col lg:justify-center lg:items-center" >
                 <section className="grid grid-cols-[auto] sm:grid sm:grid-cols-[auto,auto] sm:w-[85%] sm:gap-0 md:grid md:grid-cols-[auto,auto] xl:grid xl:grid-cols-[auto,auto]  xl:w-[90%] ">
                     <section className="w-full  sm:w-[80%] lg:w-[80%] xl:w-[80%]" >
-               <p className={colorTextoSobremi}>About me</p>
-               <span className={holamundo}>Hello Word!</span>
+               <p className={colorTextoSobremi}>{aboutMe}</p>
+               <span className={holamundo}>{helloWork}</span>
                <div className={parrafo}>
-                   <span className="xl:mb-4 2xl:mb-8 sm:mb-3 tracking-wide"> My name is Dengel and I'm 24 years old, I'm from the province of Jauja in Perú.</span>
-                   <span className="xl:mb-4 2xl:mb-8 sm:mb-3 tracking-wide">I'm freelancer developer FullStack javascript and php. I perform in web development and mobile development. From a very young age I'm passionate for technology.</span>
-                   <span className="xl:mb-4 2xl:mb-8 tracking-wide">I'm a person eager learn and I like to acquire new knowledge and skills.</span>
+                   <span className="xl:mb-4 2xl:mb-8 sm:mb-3 tracking-wide">{paragraph1}</span>
+                   <span className="xl:mb-4 2xl:mb-8 sm:mb-3 tracking-wide">{paragraph2}</span>
+                   <span className="xl:mb-4 2xl:mb-8 tracking-wide">{paragraph3}</span>
                </div>
                </section>
                 <section className="w-full flex justify-center items-center">
@@ -54,9 +54,9 @@ export default function SectionWelcome(){
     </section>
         <br/>
          <section className="font-medium grid items-center justify-center relative top-[60px] md:relative md:-left-[220px]   xl:relative xl:top-[40px] grid-cols-[repeat(3,auto)] gap-[20px] lg:relative lg:top-[80px] 2xl:top-[100px]"> 
-         <a type="button" className={colorsBoton} href="media/CV_DENGEL_RIVERA_OCTUBRE_05_2022.pdf" download >DOWNLOAD CV</a> 
-        <a type="button" className={colorsBoton}  onClick={scrollToAnchorP}>PROJECTS</a> 
-        <a type="button" className={colorsBotonEspecial}  onClick={scrollToAnchorC}>CONTACT</a>
+         <a type="button" className={colorsBoton} href="media/CV_DENGEL_RIVERA_OCTUBRE_05_2022.pdf" download >{buttonDownload}</a> 
+        <a type="button" className={colorsBoton}  onClick={scrollToAnchorP}>{buttonProject}</a> 
+        <a type="button" className={colorsBotonEspecial}  onClick={scrollToAnchorC}>{buttonContact}</a>
         </section>
      </section> 
     

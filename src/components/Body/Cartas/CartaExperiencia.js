@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import {setIdExperiencia} from "../../../redux/slices/idExperiencia";
 import { useDispatch, useSelector } from "react-redux";
-import {stateColorCartaExperiencia,stateColorBotonExperiencia} from "../../../redux/slices/cambioAspectoPagina";
+import {stateColorCartaExperiencia,stateColorBotonExperiencia,stateActiveEspanish} from "../../../redux/slices/cambioAspectoPagina";
 export default function CartaExperiencia({trabajoTitulo,AbrirModal,nId,paginaExperiencia,paginaHithub}){
     const dispatch=useDispatch()
-   
+    const activeEspanish=useSelector(stateActiveEspanish)
     useEffect(()=>{
 
     },[dispatch])
@@ -38,7 +38,7 @@ export default function CartaExperiencia({trabajoTitulo,AbrirModal,nId,paginaExp
                 </div>
                 <button onClick={()=>{AbrirModal(); dispatch(setIdExperiencia(nId))}} className="flex  justify-center items-center mt-[20px] cursor-pointer w-full">
                 <div className={`font-medium w-[130px] ${getColorBotonCarta} shadow-xl text-white text-center p-[5px] rounded-md sm:w-[180px] sm:p-[8px] xl:text-xl xl:w-full xl:rounded-xl lg:text-lg 2xl:text-2xl 2xl:w-[250px] 2xl:p-[10px] duration-1000 transition-all`}>
-                    <span>More Information</span>
+                    <span>{activeEspanish===true?"MÁS INFORMACIÓN":"More Information"}</span>
                 </div>
                 </button>
                 

@@ -1,4 +1,6 @@
 /* import ReactGA from "react-ga"; */
+import {stateActiveEspanish} from "../../../redux/slices/cambioAspectoPagina";
+import { useSelector } from "react-redux";
 export default function CartaDesarrollo({title,image,item1,item2,item3,item4,github,view}){
    /*  ReactGA.event({
         category:e.title,
@@ -6,13 +8,14 @@ export default function CartaDesarrollo({title,image,item1,item2,item3,item4,git
         label:"test label",
         value:e.id,
     }) */
+    const activeEspanish=useSelector(stateActiveEspanish)
     const casillero1=`${item1&&item1.colorfondo} text-white  flex justify-center items-center  font-robotor p-[6px] cursor-default`
     const casillero2=`${item2&&item2.colorfondo} text-white  flex justify-center items-center  font-robotor p-[6px] cursor-default`
     const casillero3=`${item3&&item3.colorfondo} text-white  flex justify-center items-center  font-robotor p-[6px] cursor-default`
     const casillero4=`${item4&&item4.colorfondo} text-white  flex justify-center items-center  font-robotor p-[6px] cursor-default`
-   
+   const traductView=activeEspanish===true?"Ver":"View";
     return(
-        <div className="w-[320px] h-[250px]  sm:w-[320px] sm:h-[250px] md:w-[320px] md:h-[250px] lg:w-[310px] lg:h-[300px] xl:w-[320px] xl:h-[350px] bg-black rounded-3xl 2xl:w-[400px] duration-1000 2xl:h-[350px] cursor-default">
+        <div className="w-[320px] h-[250px]  sm:w-[320px] sm:h-[250px] md:w-[320px] md:h-[250px] lg:w-[310px] lg:h-[300px] xl:w-[320px] xl:h-[350px] bg-gray-400 rounded-3xl 2xl:w-[400px] duration-1000 2xl:h-[350px] cursor-default">
             <img loading='lazy' className="w-full h-[250px] lg:h-[300px] rounded-3xl xl:h-[350px]" alt="img" src={`/img/${image}`}/>
             <div className="bg-blancotransparente  xl:h-[167px] p-[12px] relative -top-[138px] xl:relative xl:-top-[167px] rounded-br-3xl rounded-bl-3xl ">
                 <span className="text-yellow-500 font-bold font-robotob  text-md xl:text-xl">{title} </span>
@@ -30,13 +33,13 @@ export default function CartaDesarrollo({title,image,item1,item2,item3,item4,git
                 </a>
                 {view===""?
                 (<button  className="text-white font-robotom bg-blue-500 flex justify-center items-center w-[70px] rounded-md p-[4px] cursor-no-drop">
-                    View
+                   {traductView}
                 </button>):
                 (<a
                  href={view}
                 
                 target="_blank" className="text-white font-robotom bg-blue-500 flex justify-center items-center w-[70px] rounded-md p-[4px] ">
-                    View
+                    {traductView}
                 </a>)}
                 
                 </div>

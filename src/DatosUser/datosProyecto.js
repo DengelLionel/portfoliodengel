@@ -1,8 +1,9 @@
 export const datosProyectosBackendAndFrontend=[
 {
     id:1,
-    title:"CRUD",
-    image:"crudcursos.jpg",
+    english:{title:"CRUD"},
+    espanish:{title:"CRUD"},
+    image:"proyectoweb2.png",
     item1:{title:"JS",colorfondo:"bg-yellow-700"},
     item2:{title:"PHP",colorfondo:"bg-purple-700"},
     item3:{title:"MySql",colorfondo:"bg-blue-700"},
@@ -13,8 +14,10 @@ export const datosProyectosBackendAndFrontend=[
 },
 {
     id:2,
+    english:{title:"COMMENTS"},
+    espanish:{title:"COMENTARIOS"},
     title:"COMENTARIOS",
-    image:"comentarios.png",
+    image:"proyectoweb1.png",
     item1:{title:"S. COMPONETS",colorfondo:"bg-pink-700"},
     item2:{title:"REACT JS",colorfondo:"bg-green-700"},
     item3:{title:"PHP",colorfondo:"bg-purple-700"},
@@ -38,7 +41,7 @@ export const datosProyectosMobil=[
     {
         id:0,
         title:"APP DE EJERCICIOS DE COLEGIO",
-        image:"appcole.jpg",
+        image:"proyectomobil1.png",
         item1:{title:"JAVA",colorfondo:"bg-blue-800"},
         item2:{title:"ANDROID STUDIO",colorfondo:"bg-green-800"},
         github:"https://github.com/DengelLionel/Aplicacion-con-android-studio.git",

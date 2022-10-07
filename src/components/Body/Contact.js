@@ -1,13 +1,13 @@
 import Triangle from "./secciones/Triangle";
 import {statecolorContacto} from "../../redux/slices/cambioAspectoPagina"
 import { useSelector } from "react-redux";
-export default function Contact({colortexto}){
+export default function Contact({colortexto,titleContact}){
     let subtitulo=`duration-1000 transition-all font-bold font-robotob text-center text-[2.25rem] xl:text-[3.75rem] z-[50] relative top-[175px] sm:relative sm:top-[175px] lg:top-[174px] xl:top-[180px] 2xl:text-[3.75rem] 2xl:top-[185px] ${colortexto}`;
     const colorstyled=useSelector(statecolorContacto)
     const FondoYclase=`${colorstyled}  p-[20px] h-[100px] w-full  xl:h-[300px] xl:mt-[150px] font-robotor  rounded-tr-[50px] rounded-tl-[50px] xl:rounded-tr-[150px] xl:rounded-tl-[150px]  sm:flex sm:justify-center sm:items-center sm:h-[150px] md:h-[280px] xl:flex xl:justify-center xl:items-center  lg:h-[300px] 2xl:h-[350px]  `
     return(
         <>
-         <h2  id="contacto" className={subtitulo}>CONTACT</h2>
+         <h2  id="contacto" className={subtitulo}>{titleContact}</h2>
         <div className=" w-full h-[100px] mt-[120px] mb-[80px] flex justify-center items-center  2xl:mb-[130px] ">
             <Triangle/>
             </div>

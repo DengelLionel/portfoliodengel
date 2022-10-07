@@ -34,18 +34,12 @@ export const contentMain=[
             titleSkills:"SKILLS",
             chooseSkills:"CHOOSE YOUR FAVORITE SKILL",
             titleExperience:"EXPERIENCES",
-            moreInformation:"More Information",
-            startDate:"Start date:",
-            endDate:"End date:",
-            locale:"Locale:",
-            business:"Business:",
-            titleResponsabilities:"RESPONSIBILITIES",
-            titleKeyAccomplishments:"KEY ACCOMPLISHMENTS",
             titleContact:"CONTACT",
         },
         espanish:{
             titleMain:"Desarrollador Frontend",
             aboutMe:"Sobre mi",
+            helloWork:"Hola Mundo!",
             paragraph1:"Mi nombre es Dengel y tengo 24 años, soy de la provincia de Jauja en Perú.",
             paragraph2:"Soy desarrollador freelance FullStack javascript y php. Me desempeño en desarrollo web y desarrollo móvil. Desde muy joven me apasiona la tecnología.",
             paragraph3:"Soy una persona con muchas ganas de aprender y me gusta adquirir nuevos conocimientos y habilidades.",
@@ -54,21 +48,11 @@ export const contentMain=[
             buttonContact:"CONTACTOS",
             titleProject:"PROYECTOS",
             categoryWebdev:"Desarrollo web",
-            categoryMobiledev:"Desarrollo Mobil",
+            categoryMobiledev:"Desarrollo Móvil",
             titleSkills:"HABILIDADES",
             chooseSkills:"ELIGE TU HABILIDAD FAVORITA",
             titleExperience:"EXPERIENCIAS",
-            moreInformation:"Más Información",
-            startDate:"Fecha de Inicio:",
-            endDate:"Fecha de finalización:",
-            locale:"Lugar:",
-            business:"Empresa:",
-            titleResponsabilities:"RESPONSABILIDADES",
-            titleKeyAccomplishments:"LOGROS",
             titleContact:"CONTACTO",
-
-
-
         }
     }
 ]
